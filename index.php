@@ -212,6 +212,73 @@
 
 	</div><!--container end -->
 
+	<div id="advantages"><!--advantages begin -->
+
+		<div class="container"><!--container begin -->
+
+			<div class="same-height-row"><!--same-height-row begin -->
+
+				<div class="col-sm-4"><!--col-sm-4 begin -->
+
+					<div class="box same-height"><!--box same-heightbegin -->
+
+						<div class="icon">
+
+							<i class="fa fa-heart"></i>
+
+						</div>
+
+						<h3><a href="#">Ne iubim clientii</a></h3>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+					</div><!--box same-height end -->
+
+				</div><!--col-sm-4 end -->
+
+				<div class="col-sm-4"><!--col-sm-4 begin -->
+
+					<div class="box same-height"><!--box same-heightbegin -->
+
+						<div class="icon">
+
+							<i class="fa fa-tag"></i>
+
+						</div>
+
+						<h3><a href="#">Cele mai bune preturi</a></h3>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+					</div><!--box same-height end -->
+
+				</div><!--col-sm-4 end -->
+
+				<div class="col-sm-4"><!--col-sm-4 begin -->
+
+					<div class="box same-height"><!--box same-heightbegin -->
+
+						<div class="icon">
+
+							<i class="fa fa-thumbs-up"></i>
+
+						</div>
+
+						<h3><a href="#">100% Original</a></h3>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+					</div><!--box same-height end -->
+
+				</div><!--col-sm-4 end -->
+
+
+			</div><!--same-height-row end -->
+
+		</div><!--container end -->
+
+	</div><!--advantages end -->
+
 	<script src="js/jquery-331.min.js"></script>
 	<script src="js/bootstrap-337.min.js"></script>
 </body>
