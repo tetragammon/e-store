@@ -279,6 +279,191 @@
 
 	</div><!--advantages end -->
 
+	<div id="hot"><!--#hot begin -->
+
+		<div class="box"><!--box begin -->
+
+			<div class="container"><!--container begin -->
+
+				<div class="col-md-12"><!--col-md-12 begin -->
+
+					<h2>
+						Produse recente
+					</h2>
+
+				</div><!--col-md-12 end -->
+
+			</div><!--container end -->
+
+		</div><!--box end -->
+
+	</div><!--#hot end -->
+
+	<div id="content" class="container"><!--container begin -->
+
+		<div class="row"><!--row begin -->
+
+			<div class="col-sm-4 col-sm-6 single"><!--col-sm-4 col-sm-6 single begin -->
+
+				<div class="product"><!--product begin -->
+
+					<a href="details.php">
+
+						<img class ="img-responsive" src="admin_area/product_images/produs1.JPG" alt="Produs 1">
+
+					</a>
+
+					<div class="text"><!--text begin -->
+
+						<h3>
+
+							<a href="details.php">Proteine IWHEY 2000g</a>
+
+						</h3>
+
+						<p class="price">289 lei</p>
+
+						<p class="button">
+
+							<a href="details.php" class="btn btn-default">Detalii</a>
+							<a href="details.php" class="btn btn-primary">
+
+								<i class="fa fa-shopping-cart">
+									Adaugare in Cos
+								</i>
+
+							</a>
+
+						</p>
+
+					</div><!--text end -->
+
+				</div><!--product end -->
+
+			</div><!--col-sm-4 col-sm-6 single end -->
+
+			<div class="col-sm-4 col-sm-6 single"><!--col-sm-4 col-sm-6 single begin -->
+
+				<div class="product"><!--product begin -->
+
+					<a href="details.php">
+
+						<img class ="img-responsive" src="admin_area/product_images/produs2.JPG" alt="Produs 1">
+
+					</a>
+
+					<div class="text"><!--text begin -->
+
+						<h3>
+
+							<a href="details.php">Omega-3T</a>
+
+						</h3>
+
+						<p class="price">87 lei</p>
+
+						<p class="button">
+
+							<a href="details.php" class="btn btn-default">Detalii</a>
+							<a href="details.php" class="btn btn-primary">
+
+								<i class="fa fa-shopping-cart">
+									Adaugare in Cos
+								</i>
+
+							</a>
+
+						</p>
+
+					</div><!--text end -->
+
+				</div><!--product end -->
+
+			</div><!--col-sm-4 col-sm-6 single end -->
+
+			<div class="col-sm-4 col-sm-6 single"><!--col-sm-4 col-sm-6 single begin -->
+
+				<div class="product"><!--product begin -->
+
+					<a href="details.php">
+
+						<img class ="img-responsive" src="admin_area/product_images/produs3.JPG" alt="Produs 1">
+
+					</a>
+
+					<div class="text"><!--text begin -->
+
+						<h3>
+
+							<a href="details.php">Creapure 300g</a>
+
+						</h3>
+
+						<p class="price">129 lei</p>
+
+						<p class="button">
+
+							<a href="details.php" class="btn btn-default">Detalii</a>
+							<a href="details.php" class="btn btn-primary">
+
+								<i class="fa fa-shopping-cart">
+									Adaugare in Cos
+								</i>
+
+							</a>
+
+						</p>
+
+					</div><!--text end -->
+
+				</div><!--product end -->
+
+			</div><!--col-sm-4 col-sm-6 single end -->
+
+			<div class="col-sm-4 col-sm-6 single"><!--col-sm-4 col-sm-6 single begin -->
+
+				<div class="product"><!--product begin -->
+
+					<a href="details.php">
+
+						<img class ="img-responsive" src="admin_area/product_images/produs4.JPG" alt="Produs 1">
+
+					</a>
+
+					<div class="text"><!--text begin -->
+
+						<h3>
+
+							<a href="details.php">iGlutamine 450g</a>
+
+						</h3>
+
+						<p class="price">129 lei</p>
+
+						<p class="button">
+
+							<a href="details.php" class="btn btn-default">Detalii</a>
+							<a href="details.php" class="btn btn-primary">
+
+								<i class="fa fa-shopping-cart">
+									Adaugare in Cos
+								</i>
+
+							</a>
+
+						</p>
+
+					</div><!--text end -->
+
+				</div><!--product end -->
+
+			</div><!--col-sm-4 col-sm-6 single end -->
+
+
+		</div><!--row end -->
+
+	</div><!--container end -->
+
 	<script src="js/jquery-331.min.js"></script>
 	<script src="js/bootstrap-337.min.js"></script>
 </body>
