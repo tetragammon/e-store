@@ -151,6 +151,67 @@
 
 	</div><!--navbar navbar-default end -->
 
+	<div class="container" id="slider"><!--container begin -->
+
+		<div class="col-md-12"><!--col-md-12 begin -->
+
+			<div class="carousel slide" id="myCarousel" data-ride="carousel"><!--carousel slide begin -->
+
+				<ol class="carousel-indicators">
+
+					<li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+
+				</ol>
+
+				<div class="carousel-inner"><!--carousel-inner begin -->
+
+					<div class="item active">
+
+						<img src="admin_area/slides_images/slide4.jpg" alt="Slider Image 4">
+
+					</div>
+
+					<div class="item">
+
+						<img src="admin_area/slides_images/slide1.jpg" alt="Slider Image 1">
+
+					</div>
+
+					<div class="item">
+
+						<img src="admin_area/slides_images/slide2.jpg" alt="Slider Image 2">
+
+					</div>
+
+					<div class="item">
+
+						<img src="admin_area/slides_images/slide3.jpg" alt="Slider Image 3">
+
+					</div>
+				</div><!--carousel-inner end -->
+
+				<a href="#myCarousel" class="left carousel-control" data-slide="prev">
+
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Inapoi</span>
+
+				</a>
+				<a href="#myCarousel" class="right carousel-control" data-slide="next">
+
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Inainte</span>
+
+				</a>
+
+			</div><!--carousel slide end -->
+
+		</div><!--col-md-12 end -->
+
+	</div><!--container end -->
+
 	<script src="js/jquery-331.min.js"></script>
 	<script src="js/bootstrap-337.min.js"></script>
 </body>
