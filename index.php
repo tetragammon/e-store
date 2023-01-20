@@ -102,6 +102,49 @@
 
 				</div><!--padding-nav end -->
 
+				<a href="cart.php" class="btn navbar-btn btn-primary right"><!--btn navbar-btn btn-primary right begin -->
+
+					<i class="fa fa-shopping-cart"></i>
+					<span>4 Produse in Cos</span>
+
+				</a><!--btn navbar-btn btn-primary right end -->
+
+				<div class="navbar-collapse collapse right"><!--navbar-collapse collapse right begin-->
+
+					<button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse" data-target="#search">
+
+						<span class="sr-only">Comutare Cautare</span>
+
+						<i class="fa fa-search"></i>
+
+					</button>
+
+				</div><!--navbar-collapse collapse right end-->
+
+				<div class="collapse clearfix" id="search"><!--collapse clearfix begin-->
+
+					<form method="get" action="results.php" class="navbar-form"><!--navbar-form begin-->
+
+						<div class="input-group"><!--input-group begin-->
+
+							<input type ="text" class="form-control" placeholder="Cautare" name="user_query" required>
+
+							<span class="input-group-btn">
+
+							<button type="submit" name="search" value="Cautare" class="btn btn-primary">
+
+								<i class="fa fa-search"></i>
+
+							</button>
+
+							</span>
+
+						</div><!--input-group end-->
+
+					</form><!--navbar-form end-->
+
+				</div><!--collapse clearfix end-->
+
 			</div><!--navbar-collapse collapse -->
 
 		</div><!--container end -->
