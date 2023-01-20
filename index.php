@@ -459,10 +459,15 @@
 
 			</div><!--col-sm-4 col-sm-6 single end -->
 
-
 		</div><!--row end -->
 
 	</div><!--container end -->
+
+	<?php
+
+	include("includes/footer.php");
+
+	?>
 
 	<script src="js/jquery-331.min.js"></script>
 	<script src="js/bootstrap-337.min.js"></script>
