@@ -73,7 +73,7 @@
 						<input type="text" class="form-control" name="email">
 						<span class="input-group-btn">
 
-							<input type="submit" value="subscribe "class="btn btn-default">
+							<input type="submit" value="Subscribe "class="btn btn-default">
 
 						</span>
 
