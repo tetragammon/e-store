@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>M-Dev Store</title>
+    <title>E-Store - Magazin Online de suplimente alimentare</title>
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
     <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -183,29 +183,25 @@
                                <ol class="carousel-indicators"><!-- carousel-indicators Begin -->
                                    <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
                                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                                   <li data-target="#myCarousel" data-slide-to="2"></li>
                                </ol><!-- carousel-indicators Finish -->
 
                                <div class="carousel-inner">
                                    <div class="item active">
-                                       <center><img class="img-responsive" src="admin_area/product_images/Product-3a.jpg" alt="Product 3-a"></center>
+                                       <center><img class="img-responsive" src="admin_area/product_images/produs1.JPG" alt="Product 1"></center>
                                    </div>
                                    <div class="item">
-                                       <center><img class="img-responsive" src="admin_area/product_images/Product-3b.jpg" alt="Product 3-b"></center>
-                                   </div>
-                                   <div class="item">
-                                       <center><img class="img-responsive" src="admin_area/product_images/Product-3c.jpg" alt="Product 3-c"></center>
+                                       <center><img class="img-responsive" src="admin_area/product_images/produs1-2.JPG" alt="Product 2"></center>
                                    </div>
                                </div>
 
                                <a href="#myCarousel" class="left carousel-control" data-slide="prev"><!-- left carousel-control Begin -->
                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                   <span class="sr-only">Previous</span>
+                                   <span class="sr-only">Inapoi</span>
                                </a><!-- left carousel-control Finish -->
 
                                <a href="#myCarousel" class="right carousel-control" data-slide="next"><!-- right carousel-control Begin -->
                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                   <span class="sr-only">Previous</span>
+                                   <span class="sr-only">Inainte</span>
                                </a><!-- right carousel-control Finish -->
 
                            </div><!-- carousel slide Finish -->
@@ -214,7 +210,7 @@
 
                    <div class="col-sm-6"><!-- col-sm-6 Begin -->
                        <div class="box"><!-- box Begin -->
-                           <h1 class="text-center">M-Dev Polo Shirt Men</h1>
+                           <h1 class="text-center">Proteine IWHEY 2000g</h1>
 
                            <form action="details.php" class="form-horizontal" method="post"><!-- form-horizontal Begin -->
                                <div class="form-group"><!-- form-group Begin -->
@@ -261,20 +257,14 @@
                        <div class="row" id="thumbs"><!-- row Begin -->
 
                            <div class="col-xs-4"><!-- col-xs-4 Begin -->
-                               <a href="#" class="thumb"><!-- thumb Begin -->
-                                   <img src="admin_area/product_images/product-1.jpg" alt="product 1" class="img-responsive">
+                               <a data-target="#myCarousel" data-slide-to="0" href="#" class="thumb"><!-- thumb Begin -->
+                                   <img src="admin_area/product_images/produs1.JPG" alt="Produs 1" class="img-responsive">
                                </a><!-- thumb Finish -->
                            </div><!-- col-xs-4 Finish -->
 
                            <div class="col-xs-4"><!-- col-xs-4 Begin -->
-                               <a href="#" class="thumb"><!-- thumb Begin -->
-                                   <img src="admin_area/product_images/product-2.jpg" alt="product 2" class="img-responsive">
-                               </a><!-- thumb Finish -->
-                           </div><!-- col-xs-4 Finish -->
-
-                           <div class="col-xs-4"><!-- col-xs-4 Begin -->
-                               <a href="#" class="thumb"><!-- thumb Begin -->
-                                   <img src="admin_area/product_images/Product-4a.jpg" alt="product 4" class="img-responsive">
+                               <a data-target="#myCarousel" data-slide-to="1" href="#" class="thumb"><!-- thumb Begin -->
+                                   <img src="admin_area/product_images/produs1-2.JPG" alt="Produs 2" class="img-responsive">
                                </a><!-- thumb Finish -->
                            </div><!-- col-xs-4 Finish -->
 
@@ -310,20 +300,20 @@
                <div id="row same-heigh-row"><!-- #row same-heigh-row Begin -->
                    <div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Begin -->
                        <div class="box same-height headline"><!-- box same-height headline Begin -->
-                           <h3 class="text-center">Products You Maybe Like</h3>
+                           <h3 class="text-center">Produse care ti-ar placea</h3>
                        </div><!-- box same-height headline Finish -->
                    </div><!-- col-md-3 col-sm-6 Finish -->
 
                    <div class="col-md-3 col-sm-6 center-responsive"><!-- col-md-3 col-sm-6 center-responsive Begin -->
                        <div class="product same-height"><!-- product same-height Begin -->
                            <a href="details.php">
-                               <img class="img-responsive" src="admin_area/product_images/Product-6a.jpg" alt="Product 6">
+                               <img class="img-responsive" src="admin_area/product_images/produs2.JPG" alt="Produs 2">
                             </a>
 
                             <div class="text"><!-- text Begin -->
-                                <h3><a href="details.php">M-Dev Tank Top Women</a></h3>
+                                <h3><a href="details.php">Omega - 3T</a></h3>
 
-                                <p class="price">$40</p>
+                                <p class="price">87 lei</p>
 
                             </div><!-- text Finish -->
 
@@ -333,13 +323,13 @@
                    <div class="col-md-3 col-sm-6 center-responsive"><!-- col-md-3 col-sm-6 center-responsive Begin -->
                        <div class="product same-height"><!-- product same-height Begin -->
                            <a href="details.php">
-                               <img class="img-responsive" src="admin_area/product_images/Product-5a.jpg" alt="Product 6">
+                               <img class="img-responsive" src="admin_area/product_images/produs3.JPG" alt="Produs 3">
                             </a>
 
                             <div class="text"><!-- text Begin -->
-                                <h3><a href="details.php">M-Dev Street Shirt Women</a></h3>
+                                <h3><a href="details.php">Creapure 300g</a></h3>
 
-                                <p class="price">$45</p>
+                                <p class="price">129 lei</p>
 
                             </div><!-- text Finish -->
 
@@ -349,13 +339,13 @@
                    <div class="col-md-3 col-sm-6 center-responsive"><!-- col-md-3 col-sm-6 center-responsive Begin -->
                        <div class="product same-height"><!-- product same-height Begin -->
                            <a href="details.php">
-                               <img class="img-responsive" src="admin_area/product_images/Product-4a.jpg" alt="Product 6">
+                               <img class="img-responsive" src="admin_area/product_images/produs4.JPG" alt="Produs 4">
                             </a>
 
                             <div class="text"><!-- text Begin -->
-                                <h3><a href="details.php">M-Dev Polo T-Shirt Women</a></h3>
+                                <h3><a href="details.php">iGlutamine 450g</a></h3>
 
-                                <p class="price">$50</p>
+                                <p class="price">129 lei</p>
 
                             </div><!-- text Finish -->
 
