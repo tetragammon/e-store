@@ -1,37 +1,30 @@
-<div class="panel panel-default sidebar-menu"><!-- panel panel-default sidebar-menu begin -->
-	<div class="panel-heading"><!-- panel-heading begin -->
-		<h3 class="panel-title">Categorii Produse</h3>
-	</div><!-- panel-heading end -->
+<div class="panel panel-default sidebar-menu"><!-- panel panel-default sidebar-menu Begin -->
+    <div class="panel-heading"><!-- panel-heading Begin -->
+        <h3 class="panel-title">Products Categories</h3>
+    </div><!-- panel-heading Finish -->
 
-	<div class="panel-body"><!-- panel-body begin -->
-		<ul class="nav nav-pills nav-stacked category-menu">
+    <div class="panel-body"><!-- panel-body Begin -->
+        <ul class="nav nav-pills nav-stacked category-menu"><!-- nav nav-pills nav-stacked category-menu Begin -->
 
-			<?php
+            <?php getPCats(); ?>
 
-			getPCats();
+        </ul><!-- nav nav-pills nav-stacked category-menu Finish -->
+    </div><!-- panel-body Finish -->
 
-			?>
+</div><!-- panel panel-default sidebar-menu Finish -->
 
-		</ul>
-	</div><!-- panel-body end -->
 
-</div><!-- panel panel-default sidebar-menu end -->
+<div class="panel panel-default sidebar-menu"><!-- panel panel-default sidebar-menu Begin -->
+    <div class="panel-heading"><!-- panel-heading Begin -->
+        <h3 class="panel-title">Categories</h3>
+    </div><!-- panel-heading Finish -->
 
-<div class="panel panel-default sidebar-menu"><!-- panel panel-default sidebar-menu begin -->
-	<div class="panel-heading"><!-- panel-heading begin -->
-		<h3 class="panel-title">Categorii</h3>
-	</div><!-- panel-heading end -->
+    <div class="panel-body"><!-- panel-body Begin -->
+        <ul class="nav nav-pills nav-stacked category-menu"><!-- nav nav-pills nav-stacked category-menu Begin -->
 
-	<div class="panel-body"><!-- panel-body begin -->
-		<ul class="nav nav-pills nav-stacked category-menu">
+            <?php getCats(); ?>
 
-			<?php
+        </ul><!-- nav nav-pills nav-stacked category-menu Finish -->
+    </div><!-- panel-body Finish -->
 
-			getCats();
-
-			?>
-		</ul>
-	</div><!-- panel-body end -->
-
-</div><!-- panel panel-default sidebar-menu end -->
-
+</div><!-- panel panel-default sidebar-menu Finish -->

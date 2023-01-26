@@ -1,20 +1,22 @@
 <?php
 
-    $active=='Magazin';
+    $active='Cart';
     include("includes/header.php");
 
 ?>
+
    <div id="content"><!-- #content Begin -->
        <div class="container"><!-- container Begin -->
            <div class="col-md-12"><!-- col-md-12 Begin -->
 
                <ul class="breadcrumb"><!-- breadcrumb Begin -->
                    <li>
-                       <a href="index.php">Acasa</a>
+                       <a href="index.php">Home</a>
                    </li>
                    <li>
-                       Magazin
+                       Shop
                    </li>
+
                    <li>
                        <a href="shop.php?p_cat=<?php echo $p_cat_id; ?>"><?php echo $p_cat_title; ?></a>
                    </li>
@@ -58,12 +60,12 @@
 
                                <a href="#myCarousel" class="left carousel-control" data-slide="prev"><!-- left carousel-control Begin -->
                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                   <span class="sr-only">Inapoi</span>
+                                   <span class="sr-only">Previous</span>
                                </a><!-- left carousel-control Finish -->
 
                                <a href="#myCarousel" class="right carousel-control" data-slide="next"><!-- right carousel-control Begin -->
                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                   <span class="sr-only">Inainte</span>
+                                   <span class="sr-only">Previous</span>
                                </a><!-- right carousel-control Finish -->
 
                            </div><!-- carousel slide Finish -->
@@ -72,13 +74,13 @@
 
                    <div class="col-sm-6"><!-- col-sm-6 Begin -->
                        <div class="box"><!-- box Begin -->
-                           <h1 class="text-center"><?php echo $pro_title; ?> </h1>
+                           <h1 class="text-center"> <?php echo $pro_title; ?> </h1>
 
                            <?php add_cart(); ?>
 
-                          <form action="index.php?add_cart=<?php echo $pro_id; ?>" class="form-horizontal" method="post"><!-- form-horizontal Begin -->
+                           <form action="details.php?add_cart=<?php echo $product_id; ?>" class="form-horizontal" method="post"><!-- form-horizontal Begin -->
                                <div class="form-group"><!-- form-group Begin -->
-                                   <label for="" class="col-md-5 control-label">Cantitate Produs</label>
+                                   <label for="" class="col-md-5 control-label">Products Quantity</label>
 
                                    <div class="col-md-7"><!-- col-md-7 Begin -->
                                           <select name="product_qty" id="" class="form-control"><!-- select Begin -->
@@ -94,25 +96,25 @@
                                </div><!-- form-group Finish -->
 
                                <div class="form-group"><!-- form-group Begin -->
-                                   <label class="col-md-5 control-label">Aroma</label>
+                                   <label class="col-md-5 control-label">Product Size</label>
 
                                    <div class="col-md-7"><!-- col-md-7 Begin -->
 
-                                       <select name="product_size" class="form-control" required oninput="setCustomValidity('')" oninvalid="setCustomValidity('Trebuie aleasa o aroma!')"><!-- form-control Begin -->
+                                       <select name="product_size" class="form-control" required oninput="setCustomValidity('')" oninvalid="setCustomValidity('Must pick 1 size for the product')"><!-- form-control Begin -->
 
-                                           <option disabled selected>Selectati o aroma</option>
-                                           <option>Ciocolata</option>
-                                           <option>Vanilie</option>
-                                           <option>Banana</option>
+                                           <option disabled selected>Select a Size</option>
+                                           <option>Small</option>
+                                           <option>Medium</option>
+                                           <option>Large</option>
 
                                        </select><!-- form-control Finish -->
 
                                    </div><!-- col-md-7 Finish -->
                                </div><!-- form-group Finish -->
 
-                               <p class="price"><?php echo $pro_price; ?> lei</p>
+                               <p class="price">$ <?php echo $pro_price; ?></p>
 
-                               <p class="text-center buttons"><button class="btn btn-primary i fa fa-shopping-cart"> Adaugare in Cos</button></p>
+                               <p class="text-center buttons"><button class="btn btn-primary i fa fa-shopping-cart"> Add to cart</button></p>
 
                            </form><!-- form-horizontal Finish -->
 
@@ -121,14 +123,14 @@
                        <div class="row" id="thumbs"><!-- row Begin -->
 
                            <div class="col-xs-4"><!-- col-xs-4 Begin -->
-                               <a data-target="#myCarousel" data-slide-to="0" href="#" class="thumb"><!-- thumb Begin -->
-                                   <img src="admin_area/product_images/<?php echo $pro_img1; ?>" alt="Produs 1" class="img-responsive">
+                               <a data-target="#myCarousel" data-slide-to="0"  href="#" class="thumb"><!-- thumb Begin -->
+                                   <img src="admin_area/product_images/<?php echo $pro_img1; ?>" alt="product 1" class="img-responsive">
                                </a><!-- thumb Finish -->
                            </div><!-- col-xs-4 Finish -->
 
                            <div class="col-xs-4"><!-- col-xs-4 Begin -->
-                               <a data-target="#myCarousel" data-slide-to="1" href="#" class="thumb"><!-- thumb Begin -->
-                                   <img src="admin_area/product_images/<?php echo $pro_img2; ?>" alt="Produs 2" class="img-responsive">
+                               <a data-target="#myCarousel" data-slide-to="1"  href="#" class="thumb"><!-- thumb Begin -->
+                                   <img src="admin_area/product_images/<?php echo $pro_img2; ?>" alt="product 2" class="img-responsive">
                                </a><!-- thumb Finish -->
                            </div><!-- col-xs-4 Finish -->
 
@@ -147,7 +149,7 @@
 
                <div class="box" id="details"><!-- box Begin -->
 
-                       <h4>Detalii produs</h4>
+                       <h4>Product Details</h4>
 
                    <p>
 
@@ -155,12 +157,12 @@
 
                    </p>
 
-                       <h4>Arome</h4>
+                       <h4>Size</h4>
 
                        <ul>
-                           <li>Ciocolata</li>
-                           <li>Vanilie</li>
-                           <li>Banana</li>
+                           <li>Small</li>
+                           <li>Medium</li>
+                           <li>Large</li>
                        </ul>
 
                        <hr>
@@ -170,7 +172,7 @@
                <div id="row same-heigh-row"><!-- #row same-heigh-row Begin -->
                    <div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Begin -->
                        <div class="box same-height headline"><!-- box same-height headline Begin -->
-                           <h3 class="text-center">Produse care ti-ar placea</h3>
+                           <h3 class="text-center">Products You Maybe Like</h3>
                        </div><!-- box same-height headline Finish -->
                    </div><!-- col-md-3 col-sm-6 Finish -->
 

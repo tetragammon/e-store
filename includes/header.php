@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include("includes/db.php");
 include("functions/functions.php");
 
@@ -48,7 +50,7 @@ if(isset($_GET['pro_id'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>E-Store - Magazin online de suplimente alimentare</title>
+    <title>M-Dev Store</title>
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
     <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -63,7 +65,7 @@ if(isset($_GET['pro_id'])){
 
                <a href="#" class="btn btn-success btn-sm">
 
-               		<?php
+                   <?php
 
                    if(!isset($_SESSION['customer_email'])){
 
@@ -78,7 +80,7 @@ if(isset($_GET['pro_id'])){
                    ?>
 
                </a>
-               <a href="checkout.php"><?php items(); ?> Produse in Cos | Pret total: <?php total_price(); ?> RON </a>
+               <a href="checkout.php"><?php items(); ?> Items In Your Cart | Total Price: <?php total_price(); ?> </a>
 
            </div><!-- col-md-6 offer Finish -->
 
@@ -87,18 +89,18 @@ if(isset($_GET['pro_id'])){
                <ul class="menu"><!-- cmenu Begin -->
 
                    <li>
-                       <a href="customer_register.php">Inregistrare</a>
+                       <a href="customer_register.php">Register</a>
                    </li>
                    <li>
-                       <a href="checkout.php">Contul meu</a>
+                       <a href="checkout.php">My Account</a>
                    </li>
                    <li>
-                       <a href="cart.php">Cos cumparaturi</a>
+                       <a href="cart.php">Go To Cart</a>
                    </li>
                    <li>
                        <a href="checkout.php">
 
-                       	<?php
+                           <?php
 
                            if(!isset($_SESSION['customer_email'])){
 
@@ -138,7 +140,7 @@ if(isset($_GET['pro_id'])){
 
                <button class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
 
-                   <span class="sr-only">Comutare navigatie</span>
+                   <span class="sr-only">Toggle Navigation</span>
 
                    <i class="fa fa-align-justify"></i>
 
@@ -146,7 +148,7 @@ if(isset($_GET['pro_id'])){
 
                <button class="navbar-toggle" data-toggle="collapse" data-target="#search">
 
-                   <span class="sr-only">Comutare Cautare</span>
+                   <span class="sr-only">Toggle Search</span>
 
                    <i class="fa fa-search"></i>
 
@@ -160,20 +162,34 @@ if(isset($_GET['pro_id'])){
 
                    <ul class="nav navbar-nav left"><!-- nav navbar-nav left Begin -->
 
-                       <li class="<?php if($active=='Acasa') echo"active"; ?>">
-                           <a href="index.php">Acasa</a>
+                       <li class="<?php if($active=='Home') echo"active"; ?>">
+                           <a href="index.php">Home</a>
                        </li>
-                       <li class="<?php if($active=='Magazin') echo"active"; ?>">
-                           <a href="shop.php">Magazin</a>
+                       <li class="<?php if($active=='Shop') echo"active"; ?>">
+                           <a href="shop.php">Shop</a>
                        </li>
-                       <li class="<?php if($active=='Cont') echo"active"; ?>">
-                           <a href="customer/my_account.php">Contul meu</a>
+                       <li class="<?php if($active=='Account') echo"active"; ?>">
+
+                           <?php
+
+                           if(!isset($_SESSION['customer_email'])){
+
+                               echo"<a href='checkout.php'>My Account</a>";
+
+                           }else{
+
+                              echo"<a href='customer/my_account.php?my_orders'>My Account</a>";
+
+                           }
+
+                           ?>
+
                        </li>
-                       <li class="<?php if($active=='Cos') echo"active"; ?>">
-                           <a href="cart.php">Cos Cumparaturi</a>
+                       <li class="<?php if($active=='Cart') echo"active"; ?>">
+                           <a href="cart.php">Shopping Cart</a>
                        </li>
                        <li class="<?php if($active=='Contact') echo"active"; ?>">
-                           <a href="contact.php">Contact</a>
+                           <a href="contact.php">Contact Us</a>
                        </li>
 
                    </ul><!-- nav navbar-nav left Finish -->
@@ -184,7 +200,7 @@ if(isset($_GET['pro_id'])){
 
                    <i class="fa fa-shopping-cart"></i>
 
-                   <span><?php items(); ?> Produse in Cos</span>
+                   <span><?php items(); ?> Items In Your Cart</span>
 
                </a><!-- btn navbar-btn btn-primary Finish -->
 
@@ -192,7 +208,7 @@ if(isset($_GET['pro_id'])){
 
                    <button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse" data-target="#search"><!-- btn btn-primary navbar-btn Begin -->
 
-                       <span class="sr-only">Comutare Cautare</span>
+                       <span class="sr-only">Toggle Search</span>
 
                        <i class="fa fa-search"></i>
 

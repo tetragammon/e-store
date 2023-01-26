@@ -1,6 +1,10 @@
 <?php
 
-include("includes/db.php");
+    if(!isset($_SESSION['admin_email'])){
+
+        echo "<script>window.open('login.php','_self')</script>";
+
+    }else{
 
 ?>
 
@@ -9,9 +13,7 @@ include("includes/db.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Adaugare produse </title>
-    <link rel="stylesheet" href="css/bootstrap-337.min.css">
-    <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
+    <title> Insert Products </title>
 </head>
 <body>
 
@@ -21,11 +23,11 @@ include("includes/db.php");
 
         <ol class="breadcrumb"><!-- breadcrumb Begin -->
 
-            <li class="active"><!-- breadcrumb Begin -->
+            <li class="active"><!-- active Begin -->
 
-                <i class="fa fa-dashboard"></i> Dashboard / Adaugare produse
+                <i class="fa fa-dashboard"></i> Dashboard / Insert Products
 
-            </li><!-- breadcrumb Finish -->
+            </li><!-- active Finish -->
 
         </ol><!-- breadcrumb Finish -->
 
@@ -39,15 +41,15 @@ include("includes/db.php");
 
         <div class="panel panel-default"><!-- panel panel-default Begin -->
 
-           <div class="panel-heading"><!-- panel panel-default Begin -->
+           <div class="panel-heading"><!-- panel-heading Begin -->
 
                <h3 class="panel-title"><!-- panel-title Begin -->
 
-                   <i class="fa fa-money fa-fw"></i> Adaugare produs
+                   <i class="fa fa-money fa-fw"></i> Insert Product
 
                </h3><!-- panel-title Finish -->
 
-           </div> <!-- canel panel-default Finish -->
+           </div> <!-- panel-heading Finish -->
 
            <div class="panel-body"><!-- panel-body Begin -->
 
@@ -55,7 +57,7 @@ include("includes/db.php");
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Nume produs </label>
+                      <label class="col-md-3 control-label"> Product Title </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -67,13 +69,13 @@ include("includes/db.php");
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Categorie produs </label>
+                      <label class="col-md-3 control-label"> Product Category </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
                           <select name="product_cat" class="form-control"><!-- form-control Begin -->
 
-                              <option> Selectati categorie </option>
+                              <option> Select a Category Product </option>
 
                               <?php
 
@@ -103,13 +105,13 @@ include("includes/db.php");
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Categorie </label>
+                      <label class="col-md-3 control-label"> Category </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
                           <select name="cat" class="form-control"><!-- form-control Begin -->
 
-                              <option> Selectati categorie </option>
+                              <option> Select a Category </option>
 
                               <?php
 
@@ -139,7 +141,7 @@ include("includes/db.php");
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Imagine produs 1</label>
+                      <label class="col-md-3 control-label"> Product Image 1 </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -151,7 +153,7 @@ include("includes/db.php");
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Imagine produs 2</label>
+                      <label class="col-md-3 control-label"> Product Image 2 </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -163,7 +165,7 @@ include("includes/db.php");
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Imagine produs 3</label>
+                      <label class="col-md-3 control-label"> Product Image 3 </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -175,7 +177,7 @@ include("includes/db.php");
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Pret produs </label>
+                      <label class="col-md-3 control-label"> Product Price </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -187,7 +189,7 @@ include("includes/db.php");
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Keywords produs </label>
+                      <label class="col-md-3 control-label"> Product Keywords </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -199,7 +201,7 @@ include("includes/db.php");
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Descriere </label>
+                      <label class="col-md-3 control-label"> Product Desc </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -215,7 +217,7 @@ include("includes/db.php");
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
-                          <input name="submit" value="Inserare produs" type="submit" class="btn btn-primary form-control">
+                          <input name="submit" value="Insert Product" type="submit" class="btn btn-primary form-control">
 
                       </div><!-- col-md-6 Finish -->
 
@@ -231,8 +233,6 @@ include("includes/db.php");
 
 </div><!-- row Finish -->
 
-    <script src="js/jquery-331.min.js"></script>
-    <script src="js/bootstrap-337.min.js"></script>
     <script src="js/tinymce/tinymce.min.js"></script>
     <script>tinymce.init({ selector:'textarea'});</script>
 </body>
@@ -268,11 +268,14 @@ if(isset($_POST['submit'])){
 
     if($run_product){
 
-        echo "<script>alert('Produsul a fost introdus in baza de date')</script>";
-        echo "<script>window.open('insert_product.php','_self')</script>";
+        echo "<script>alert('Product has been inserted sucessfully')</script>";
+        echo "<script>window.open('index.php?view_products','_self')</script>";
 
     }
 
 }
 
 ?>
+
+
+<?php } ?>

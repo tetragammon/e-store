@@ -2,19 +2,45 @@
 
     <div class="panel-heading"><!--  panel-heading  Begin  -->
 
-        <center><!--  center  Begin  -->
+        <?php
 
-            <img src="customer_images/user.jpg" alt="Poza profil">
+        $customer_session = $_SESSION['customer_email'];
 
-        </center><!--  center  Finish  -->
+        $get_customer = "select * from customers where customer_email='$customer_session'";
 
-        <br/>
+        $run_customer = mysqli_query($con,$get_customer);
 
-        <h3 align="center" class="panel-title"><!--  panel-title  Begin  -->
+        $row_customer = mysqli_fetch_array($run_customer);
 
-            Name: Laurentiu Cerghedean
+        $customer_image = $row_customer['customer_image'];
 
-        </h3><!--  panel-title  Finish -->
+        $customer_name = $row_customer['customer_name'];
+
+        if(!isset($_SESSION['customer_email'])){
+
+        }else{
+
+            echo "
+
+                <center>
+
+                    <img src='customer_images/$customer_image' class='img-responsive' >
+
+                </center>
+
+                <br/>
+
+                <h3 class='panel-title' align='center'>
+
+                    Name: $customer_name
+
+                </h3>
+
+            ";
+
+        }
+
+        ?>
 
     </div><!--  panel-heading Finish  -->
 
@@ -26,7 +52,7 @@
 
                 <a href="my_account.php?my_orders">
 
-                    <i class="fa fa-list"></i> Comenzile mele
+                    <i class="fa fa-list"></i> My Orders
 
                 </a>
 
@@ -36,7 +62,7 @@
 
                 <a href="my_account.php?pay_offline">
 
-                    <i class="fa fa-bolt"></i> Plata ramburs
+                    <i class="fa fa-bolt"></i> Pay Offline
 
                 </a>
 
@@ -46,7 +72,7 @@
 
                 <a href="my_account.php?edit_account">
 
-                    <i class="fa fa-pencil"></i> Editare cont
+                    <i class="fa fa-pencil"></i> Edit Account
 
                 </a>
 
@@ -56,7 +82,7 @@
 
                 <a href="my_account.php?change_pass">
 
-                    <i class="fa fa-user"></i> Schimbare parola
+                    <i class="fa fa-user"></i> Change Password
 
                 </a>
 
@@ -66,7 +92,7 @@
 
                 <a href="my_account.php?delete_account">
 
-                    <i class="fa fa-trash-o"></i> Stergere cont
+                    <i class="fa fa-trash-o"></i> Delete Account
 
                 </a>
 

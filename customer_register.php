@@ -1,20 +1,20 @@
+<?php
 
-  <?php
-
-    $active='Cont';
+    $active='Account';
     include("includes/header.php");
 
 ?>
+
    <div id="content"><!-- #content Begin -->
        <div class="container"><!-- container Begin -->
            <div class="col-md-12"><!-- col-md-12 Begin -->
 
                <ul class="breadcrumb"><!-- breadcrumb Begin -->
                    <li>
-                       <a href="index.php">Acasa</a>
+                       <a href="index.php">Home</a>
                    </li>
                    <li>
-                       Inregistrare
+                       Register
                    </li>
                </ul><!-- breadcrumb Finish -->
 
@@ -38,7 +38,7 @@
 
                        <center><!-- center Begin -->
 
-                           <h2> Inregistrare cont nou</h2>
+                           <h2> Register a new account </h2>
 
                        </center><!-- center Finish -->
 
@@ -46,7 +46,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Numele tau</label>
+                               <label>Your Name</label>
 
                                <input type="text" class="form-control" name="c_name" required>
 
@@ -54,7 +54,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Email</label>
+                               <label>Your Email</label>
 
                                <input type="text" class="form-control" name="c_email" required>
 
@@ -62,7 +62,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Parola ta</label>
+                               <label>Your Password</label>
 
                                <input type="password" class="form-control" name="c_pass" required>
 
@@ -70,7 +70,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Tara</label>
+                               <label>Your Country</label>
 
                                <input type="text" class="form-control" name="c_country" required>
 
@@ -78,7 +78,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Oras</label>
+                               <label>Your City</label>
 
                                <input type="text" class="form-control" name="c_city" required>
 
@@ -86,7 +86,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Numar telefon</label>
+                               <label>Your Contact</label>
 
                                <input type="text" class="form-control" name="c_contact" required>
 
@@ -94,7 +94,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Adresa</label>
+                               <label>Your Address</label>
 
                                <input type="text" class="form-control" name="c_address" required>
 
@@ -102,7 +102,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Poza profil</label>
+                               <label>Your Profile Picture</label>
 
                                <input type="file" class="form-control form-height-custom" name="c_image" required>
 
@@ -112,7 +112,7 @@
 
                                <button type="submit" name="register" class="btn btn-primary">
 
-                               <i class="fa fa-user-md"></i> Inregistrare
+                               <i class="fa fa-user-md"></i> Register
 
                                </button>
 
@@ -141,6 +141,7 @@
 
 </body>
 </html>
+
 
 <?php
 
@@ -180,21 +181,21 @@ if(isset($_POST['register'])){
 
     if($check_cart>0){
 
-        /// daca sunt produse in cos
+        /// If register have items in cart ///
 
         $_SESSION['customer_email']=$c_email;
 
-        echo "<script>alert('Inregistrarea a fost facuta cu succes')</script>";
+        echo "<script>alert('You have been Registered Sucessfully')</script>";
 
         echo "<script>window.open('checkout.php','_self')</script>";
 
     }else{
 
-        /// daca nu sunt produse in cos
+        /// If register without items in cart ///
 
         $_SESSION['customer_email']=$c_email;
 
-        echo "<script>alert('Inregistrarea a fost facuta cu succes')</script>";
+        echo "<script>alert('You have been Registered Sucessfully')</script>";
 
         echo "<script>window.open('index.php','_self')</script>";
 

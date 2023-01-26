@@ -1,29 +1,28 @@
 <?php
 
-$active='Acasa';
-include("includes/header.php");
+    $active='Home';
+    include("includes/header.php");
+
 ?>
 
+   <div class="container" id="slider"><!-- container Begin -->
 
+       <div class="col-md-12"><!-- col-md-12 Begin -->
 
-	<div class="container" id="slider"><!--container begin -->
+           <div class="carousel slide" id="myCarousel" data-ride="carousel"><!-- carousel slide Begin -->
 
-		<div class="col-md-12"><!--col-md-12 begin -->
+               <ol class="carousel-indicators"><!-- carousel-indicators Begin -->
 
-			<div class="carousel slide" id="myCarousel" data-ride="carousel"><!--carousel slide begin -->
+                   <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+                   <li data-target="#myCarousel" data-slide-to="1"></li>
+                   <li data-target="#myCarousel" data-slide-to="2"></li>
+                   <li data-target="#myCarousel" data-slide-to="3"></li>
 
-				<ol class="carousel-indicators">
+               </ol><!-- carousel-indicators Finish -->
 
-					<li class="active" data-target="#myCarousel" data-slide-to="0"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-					<li data-target="#myCarousel" data-slide-to="3"></li>
+               <div class="carousel-inner"><!-- carousel-inner Begin -->
 
-				</ol>
-
-				<div class="carousel-inner"><!--carousel-inner begin -->
-
-					 <?php
+                  <?php
 
                    $get_slides = "select * from slider LIMIT 0,1";
 
@@ -33,12 +32,17 @@ include("includes/header.php");
 
                        $slide_name = $row_slides['slide_name'];
                        $slide_image = $row_slides['slide_image'];
+                       $slide_url = $row_slides['slide_url'];
 
                        echo "
 
                        <div class='item active'>
 
-                       <img src='admin_area/slides_images/$slide_image'>
+                           <a href='$slide_url'>
+
+                                <img src='admin_area/slides_images/$slide_image'>
+
+                           </a>
 
                        </div>
 
@@ -54,12 +58,17 @@ include("includes/header.php");
 
                        $slide_name = $row_slides['slide_name'];
                        $slide_image = $row_slides['slide_image'];
+                       $slide_url = $row_slides['slide_url'];
 
                        echo "
 
                        <div class='item'>
 
-                       <img src='admin_area/slides_images/$slide_image'>
+                           <a href='$slide_url'>
+
+                                <img src='admin_area/slides_images/$slide_image'>
+
+                           </a>
 
                        </div>
 
@@ -69,137 +78,116 @@ include("includes/header.php");
 
                    ?>
 
-				</div><!--carousel-inner end -->
+               </div><!-- carousel-inner Finish -->
 
-				<a href="#myCarousel" class="left carousel-control" data-slide="prev">
+               <a href="#myCarousel" class="left carousel-control" data-slide="prev"><!-- left carousel-control Begin -->
 
-					<span class="glyphicon glyphicon-chevron-left"></span>
-					<span class="sr-only">Inapoi</span>
+                   <span class="glyphicon glyphicon-chevron-left"></span>
+                   <span class="sr-only">Previous</span>
 
-				</a>
-				<a href="#myCarousel" class="right carousel-control" data-slide="next">
+               </a><!-- left carousel-control Finish -->
 
-					<span class="glyphicon glyphicon-chevron-right"></span>
-					<span class="sr-only">Inainte</span>
+               <a href="#myCarousel" class="right carousel-control" data-slide="next"><!-- left carousel-control Begin -->
 
-				</a>
+                   <span class="glyphicon glyphicon-chevron-right"></span>
+                   <span class="sr-only">Next</span>
 
-			</div><!--carousel slide end -->
+               </a><!-- left carousel-control Finish -->
 
-		</div><!--col-md-12 end -->
+           </div><!-- carousel slide Finish -->
 
-	</div><!--container end -->
+       </div><!-- col-md-12 Finish -->
 
-	<div id="advantages"><!--advantages begin -->
+   </div><!-- container Finish -->
 
-		<div class="container"><!--container begin -->
+   <div id="advantages"><!-- #advantages Begin -->
 
-			<div class="same-height-row"><!--same-height-row begin -->
+       <div class="container"><!-- container Begin -->
 
-				<div class="col-sm-4"><!--col-sm-4 begin -->
+           <div class="same-height-row"><!-- same-height-row Begin -->
 
-					<div class="box same-height"><!--box same-heightbegin -->
+           <?php
 
-						<div class="icon">
+           $get_boxes = "select * from boxes_section";
+           $run_boxes = mysqli_query($con,$get_boxes);
 
-							<i class="fa fa-heart"></i>
+           while($run_boxes_section=mysqli_fetch_array($run_boxes)){
 
-						</div>
+            $box_id = $run_boxes_section['box_id'];
+            $box_title = $run_boxes_section['box_title'];
+            $box_desc = $run_boxes_section['box_desc'];
 
-						<h3><a href="#">Ne iubim clientii</a></h3>
+           ?>
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+               <div class="col-sm-4"><!-- col-sm-4 Begin -->
 
-					</div><!--box same-height end -->
+                   <div class="box same-height"><!-- box same-height Begin -->
 
-				</div><!--col-sm-4 end -->
+                       <div class="icon"><!-- icon Begin -->
 
-				<div class="col-sm-4"><!--col-sm-4 begin -->
+                           <i class="fa fa-heart"></i>
 
-					<div class="box same-height"><!--box same-heightbegin -->
+                       </div><!-- icon Finish -->
 
-						<div class="icon">
+                       <h3><a href="#"><?php echo $box_title; ?></a></h3>
 
-							<i class="fa fa-tag"></i>
+                       <p> <?php echo $box_desc; ?> </p>
 
-						</div>
+                   </div><!-- box same-height Finish -->
 
-						<h3><a href="#">Cele mai bune preturi</a></h3>
+               </div><!-- col-sm-4 Finish -->
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <?php    } ?>
 
-					</div><!--box same-height end -->
+           </div><!-- same-height-row Finish -->
 
-				</div><!--col-sm-4 end -->
+       </div><!-- container Finish -->
 
-				<div class="col-sm-4"><!--col-sm-4 begin -->
+   </div><!-- #advantages Finish -->
 
-					<div class="box same-height"><!--box same-heightbegin -->
+   <div id="hot"><!-- #hot Begin -->
 
-						<div class="icon">
+       <div class="box"><!-- box Begin -->
 
-							<i class="fa fa-thumbs-up"></i>
+           <div class="container"><!-- container Begin -->
 
-						</div>
+               <div class="col-md-12"><!-- col-md-12 Begin -->
 
-						<h3><a href="#">100% Original</a></h3>
+                   <h2>
+                       Our Latest Products
+                   </h2>
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+               </div><!-- col-md-12 Finish -->
 
-					</div><!--box same-height end -->
+           </div><!-- container Finish -->
 
-				</div><!--col-sm-4 end -->
+       </div><!-- box Finish -->
 
+   </div><!-- #hot Finish -->
 
-			</div><!--same-height-row end -->
+   <div id="content" class="container"><!-- container Begin -->
 
-		</div><!--container end -->
+       <div class="row"><!-- row Begin -->
 
-	</div><!--advantages end -->
-
-	<div id="hot"><!--#hot begin -->
-
-		<div class="box"><!--box begin -->
-
-			<div class="container"><!--container begin -->
-
-				<div class="col-md-12"><!--col-md-12 begin -->
-
-					<h2>
-						Produse recente
-					</h2>
-
-				</div><!--col-md-12 end -->
-
-			</div><!--container end -->
-
-		</div><!--box end -->
-
-	</div><!--#hot end -->
-
-	<div id="content" class="container"><!--container begin -->
-
-		<div class="row"><!--row begin -->
-
-		   <?php
+          <?php
 
            getPro();
 
            ?>
 
-		</div><!--row end -->
+       </div><!-- row Finish -->
 
-	</div><!--container end -->
+   </div><!-- container Finish -->
 
-	<?php
+   <?php
 
-	include("includes/footer.php");
+    include("includes/footer.php");
 
-	?>
+    ?>
 
-	<script src="js/jquery-331.min.js"></script>
-	<script src="js/bootstrap-337.min.js"></script>
+    <script src="js/jquery-331.min.js"></script>
+    <script src="js/bootstrap-337.min.js"></script>
+
+
 </body>
 </html>
-
-

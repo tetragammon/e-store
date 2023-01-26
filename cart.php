@@ -1,6 +1,6 @@
-  <?php
+<?php
 
-    $active='Cos';
+    $active='Cart';
     include("includes/header.php");
 
 ?>
@@ -11,10 +11,10 @@
 
                <ul class="breadcrumb"><!-- breadcrumb Begin -->
                    <li>
-                       <a href="index.php">Acasa</a>
+                       <a href="index.php">Home</a>
                    </li>
                    <li>
-                       Cos Cumparaturi
+                       Cart
                    </li>
                </ul><!-- breadcrumb Finish -->
 
@@ -26,7 +26,7 @@
 
                    <form action="cart.php" method="post" enctype="multipart/form-data"><!-- form Begin -->
 
-                       <h1>Cos Cumparaturi</h1>
+                       <h1>Shopping Cart</h1>
 
                        <?php
 
@@ -40,7 +40,7 @@
 
                        ?>
 
-                       <p class="text-muted">Aveti <?php echo $count; ?> produs(e) in cos</p>
+                       <p class="text-muted">You currently have <?php echo $count; ?> item(s) in your cart</p>
 
                        <div class="table-responsive"><!-- table-responsive Begin -->
 
@@ -50,11 +50,11 @@
 
                                    <tr><!-- tr Begin -->
 
-                                       <th colspan="2">Produs</th>
-                                       <th>Cantitate</th>
-                                       <th>Pret unitar</th>
-                                       <th>Aroma</th>
-                                       <th colspan="1">Stergere</th>
+                                       <th colspan="2">Product</th>
+                                       <th>Quantity</th>
+                                       <th>Unit Price</th>
+                                       <th>Size</th>
+                                       <th colspan="1">Delete</th>
                                        <th colspan="2">Sub-Total</th>
 
                                    </tr><!-- tr Finish -->
@@ -63,7 +63,7 @@
 
                                <tbody><!-- tbody Begin -->
 
-                                   <?php
+                                  <?php
 
                                    $total = 0;
 
@@ -164,7 +164,7 @@
 
                                <a href="index.php" class="btn btn-default"><!-- btn btn-default Begin -->
 
-                                   <i class="fa fa-chevron-left"></i> Continuati cumparaturile
+                                   <i class="fa fa-chevron-left"></i> Continue Shopping
 
                                </a><!-- btn btn-default Finish -->
 
@@ -174,13 +174,13 @@
 
                                <button type="submit" name="update" value="Update Cart" class="btn btn-default"><!-- btn btn-default Begin -->
 
-                                   <i class="fa fa-refresh"></i> Update Cos cumparaturi
+                                   <i class="fa fa-refresh"></i> Update Cart
 
                                </button><!-- btn btn-default Finish -->
 
                                <a href="checkout.php" class="btn btn-primary">
 
-                                   Checkout <i class="fa fa-chevron-right"></i>
+                                   Proceed Checkout <i class="fa fa-chevron-right"></i>
 
                                </a>
 
@@ -269,7 +269,6 @@
 
                    ?>
 
-
                </div><!-- #row same-heigh-row Finish -->
 
            </div><!-- col-md-9 Finish -->
@@ -280,13 +279,13 @@
 
                    <div class="box-header"><!-- box-header Begin -->
 
-                       <h3>Sumar comanda</h3>
+                       <h3>Order Summary</h3>
 
                    </div><!-- box-header Finish -->
 
                    <p class="text-muted"><!-- text-muted Begin -->
 
-                       Costurile de expeditie si alte costuri suplimentare sunt calculate in functie de valorile introduse.
+                       Shipping and additional costs are calculated based on value you have entered
 
                    </p><!-- text-muted Finish -->
 
@@ -298,29 +297,29 @@
 
                                <tr><!-- tr Begin -->
 
-                                   <td> Sub-Total Comanda </td>
+                                   <td> Order All Sub-Total </td>
                                    <th> $<?php echo $total; ?> </th>
 
                                </tr><!-- tr Finish -->
 
                                <tr><!-- tr Begin -->
 
-                                   <td> Expediere si manipulare </td>
-                                   <td> 0 lei </td>
+                                   <td> Shipping and Handling </td>
+                                   <td> $0 </td>
 
                                </tr><!-- tr Finish -->
 
                                <tr><!-- tr Begin -->
 
-                                   <td> Taxe </td>
-                                   <th> 0 lei</th>
+                                   <td> Tax </td>
+                                   <th> $0 </th>
 
                                </tr><!-- tr Finish -->
 
                                <tr class="total"><!-- tr Begin -->
 
                                    <td> Total </td>
-                                   <th> $<?php echo $total; ?> lei </th>
+                                   <th> $<?php echo $total; ?> </th>
 
                                </tr><!-- tr Finish -->
 

@@ -1,40 +1,38 @@
 <?php
 
-    $active='Magazin';
+    $active='Shop';
     include("includes/header.php");
 
 ?>
 
-	<div id="content"><!--#content begin -->
-		<div class="container"><!--container begin -->
-			<div class="col-md-12"><!--col-md-12 begin -->
+   <div id="content"><!-- #content Begin -->
+       <div class="container"><!-- container Begin -->
+           <div class="col-md-12"><!-- col-md-12 Begin -->
 
-				<ul class="breadcrumb"><!--breadcrumbs begin -->
+               <ul class="breadcrumb"><!-- breadcrumb Begin -->
+                   <li>
+                       <a href="index.php">Home</a>
+                   </li>
+                   <li>
+                       Shop
+                   </li>
+               </ul><!-- breadcrumb Finish -->
 
-					<li>
-						<a href="index.php">Acasa</a>
-					</li>
-					<li>
-						Magazin
-					</li>
+           </div><!-- col-md-12 Finish -->
 
-				</ul><!--breadcrumbs end -->
+           <div class="col-md-3"><!-- col-md-3 Begin -->
 
-			</div><!--col-md-12 end -->
+   <?php
 
-			<div class="col-md-3"><!--col-md-3 begin -->
+    include("includes/sidebar.php");
 
-					<?php
+    ?>
 
-					include("includes/sidebar.php");
+           </div><!-- col-md-3 Finish -->
 
-					?>
+           <div class="col-md-9"><!-- col-md-9 Begin -->
 
-			</div><!--col-md-3 end -->
-
-			<div class="col-md-9"><!--col-md-9 begin -->
-
-				 <?php
+             <?php
 
                 if(!isset($_GET['p_cat'])){
 
@@ -43,7 +41,7 @@
                       echo "
 
                        <div class='box'><!-- box Begin -->
-                           <h1>Magazin</h1>
+                           <h1>Shop</h1>
                            <p>
                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo deleniti accusamus, consequuntur illum quasi ut. Voluptate a, ipsam repellendus ut fugiat minima? Id facilis itaque autem, officiis veritatis perferendis, quaerat!
                            </p>
@@ -115,7 +113,7 @@
 
                                                 <p class='price'>
 
-                                                    $pro_price lei
+                                                    $$pro_price
 
                                                 </p>
 
@@ -123,13 +121,13 @@
 
                                                     <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
 
-                                                        Detalii
+                                                        View Details
 
                                                     </a>
 
                                                     <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
 
-                                                        <i class='fa fa-shopping-cart'></i> Adaugare in cos
+                                                        <i class='fa fa-shopping-cart'></i> Add To Cart
 
                                                     </a>
 
@@ -165,7 +163,7 @@
 
                             <li>
 
-                                <a href='shop.php?page=1'> ".'Prima pagina'." </a>
+                                <a href='shop.php?page=1'> ".'First Page'." </a>
 
                             </li>
 
@@ -189,7 +187,7 @@
 
                             <li>
 
-                                <a href='shop.php?page=$total_pages'> ".'Ultima pagina'." </a>
+                                <a href='shop.php?page=$total_pages'> ".'Last Page'." </a>
 
                             </li>
 
@@ -206,23 +204,26 @@
 
                 <?php
 
-					getpcatpro();
-					getcatpro();
+               getpcatpro();
 
-				?>
+               getcatpro();
 
-			</div><!--col-md-9 end -->
+               ?>
 
-		</div><!--container end -->
-	</div><!--#content end -->
+           </div><!-- col-md-9 Finish -->
 
-	<?php
+       </div><!-- container Finish -->
+   </div><!-- #content Finish -->
 
-	include("includes/footer.php");
+   <?php
 
-	?>
+    include("includes/footer.php");
 
-	<script src="js/jquery-331.min.js"></script>
-	<script src="js/bootstrap-337.min.js"></script>
+    ?>
+
+    <script src="js/jquery-331.min.js"></script>
+    <script src="js/bootstrap-337.min.js"></script>
+
+
 </body>
 </html>
