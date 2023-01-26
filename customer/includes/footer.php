@@ -6,10 +6,10 @@
 				<h4>Pagini</h4>
 
 				<ul>
-					<li><a href="cart.php">Cos Cumparaturi</a></li>
-					<li><a href="contact.php">Contact</a></li>
-					<li><a href="shop.php">Magazin</a></li>
-					<li><a href="/customer/my_account.php">Contul meu</a></li>
+					<li><a href="../cart.php">Cos Cumparaturi</a></li>
+					<li><a href="../contact.php">Contact</a></li>
+					<li><a href="../shop.php">Magazin</a></li>
+					<li><a href="my_account.php">Contul meu</a></li>
 				</ul>
 
 				<hr>
@@ -18,7 +18,7 @@
 
 				<ul>
 					<li><a href="checkout.php">Login</a></li>
-					<li><a href="customer_register.php">Inregistrare</a></li>
+					<li><a href="../customer_register.php">Inregistrare</a></li>
 				</ul>
 
 				<hr class="hidden-md hidden-lg hidden-sm">
@@ -53,7 +53,7 @@
 
 				</p><!-- p end -->
 
-				<a href="contact.php">Pagina de contact</a>
+				<a href="../contact.php">Pagina de contact</a>
 
 				<hr class="hidden-md hidden-lg">
 

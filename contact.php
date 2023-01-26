@@ -29,7 +29,7 @@
                        <a href="customer_register.php">Inregistrare</a>
                    </li>
                    <li>
-                       <a href="checkout.php">Contul meu</a>
+                       <a href="/customer/my_account.php">Contul meu</a>
                    </li>
                    <li>
                        <a href="cart.php">Cos cumparaturi</a>

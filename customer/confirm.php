@@ -26,16 +26,16 @@
                <ul class="menu"><!-- cmenu Begin -->
 
                    <li>
-                       <a href="customer_register.php">Inregistrare</a>
+                       <a href="../customer_register.php">Inregistrarer</a>
                    </li>
                    <li>
-                       <a href="checkout.php">Contul meu</a>
+                       <a href="my_account.php">Contul meu</a>
                    </li>
                    <li>
-                       <a href="cart.php">Cos cumparaturi</a>
+                       <a href="../cart.php">Cos cumparaturi</a>
                    </li>
                    <li>
-                       <a href="checkout.php">Login</a>
+                       <a href="../checkout.php">Login</a>
                    </li>
 
                </ul><!-- menu Finish -->
@@ -83,20 +83,20 @@
 
                    <ul class="nav navbar-nav left"><!-- nav navbar-nav left Begin -->
 
-                       <li  class="active">
-                           <a href="index.php">Acasa</a>
+                       <li>
+                           <a href="../index.php">Acasa</a>
                        </li>
                        <li>
-                           <a href="shop.php">Magazin</a>
+                           <a href="../shop.php">Magazin</a>
+                       </li>
+                       <li class="active">
+                           <a href="my_account.php">Contul meu</a>
                        </li>
                        <li>
-                           <a href="/customer/my_account.php">Contul meu</a>
+                           <a href="../cart.php">Cos Cumparaturi</a>
                        </li>
                        <li>
-                           <a href="cart.php">Cos Cumparaturi</a>
-                       </li>
-                       <li>
-                           <a href="contact.php">Contact</a>
+                           <a href="../contact.php">Contact</a>
                        </li>
 
                    </ul><!-- nav navbar-nav left Finish -->
@@ -162,7 +162,7 @@
                        <a href="index.php">Acasa</a>
                    </li>
                    <li>
-                       Inregistrare
+                       Contul meu
                    </li>
                </ul><!-- breadcrumb Finish -->
 
@@ -182,93 +182,77 @@
 
                <div class="box"><!-- box Begin -->
 
-                   <div class="box-header"><!-- box-header Begin -->
+                   <h1 align="center"> Confirmati plata</h1>
 
-                       <center><!-- center Begin -->
+                   <form action="confirm.php" method="post" enctype="multipart/form-data"><!-- form Begin -->
 
-                           <h2> Inregistrare cont nou</h2>
+                       <div class="form-group"><!-- form-group Begin -->
 
-                       </center><!-- center Finish -->
+                         <label> Factura nr: </label>
 
-                       <form action="customer_register.php" method="post" enctype="multipart/form-data"><!-- form Begin -->
+                          <input type="text" class="form-control" name="invoice_no" required>
 
-                           <div class="form-group"><!-- form-group Begin -->
+                       </div><!-- form-group Finish -->
 
-                               <label>Numele tau</label>
+                       <div class="form-group"><!-- form-group Begin -->
 
-                               <input type="text" class="form-control" name="c_name" required>
+                         <label> Suma: </label>
 
-                           </div><!-- form-group Finish -->
+                          <input type="text" class="form-control" name="amount_sent" required>
 
-                           <div class="form-group"><!-- form-group Begin -->
+                       </div><!-- form-group Finish -->
 
-                               <label>Email</label>
+                       <div class="form-group"><!-- form-group Begin -->
 
-                               <input type="text" class="form-control" name="c_email" required>
+                         <label> Modalitate plata: </label>
 
-                           </div><!-- form-group Finish -->
+                          <select name="payment_mode" class="form-control"><!-- form-control Begin -->
 
-                           <div class="form-group"><!-- form-group Begin -->
+                              <option> Selectati mod plata </option>
+                              <option> Card bancar </option>
+                              <option> Paypal </option>
+                              <option> Transfer bancar </option>
+                              <option> Plata la livrare </option>
 
-                               <label>Parola ta</label>
+                          </select><!-- form-control Finish -->
 
-                               <input type="password" class="form-control" name="c_pass" required>
+                       </div><!-- form-group Finish -->
 
-                           </div><!-- form-group Finish -->
+                       <div class="form-group"><!-- form-group Begin -->
 
-                           <div class="form-group"><!-- form-group Begin -->
+                         <label> Referinta tranzactie ID: </label>
 
-                               <label>Tara</label>
+                          <input type="text" class="form-control" name="ref_no" required>
 
-                               <input type="text" class="form-control" name="c_country" required>
+                       </div><!-- form-group Finish -->
 
-                           </div><!-- form-group Finish -->
+                       <div class="form-group"><!-- form-group Begin -->
 
-                           <div class="form-group"><!-- form-group Begin -->
+                         <label> Omni Paisa / East Paisa: </label>
 
-                               <label>Oras</label>
+                          <input type="text" class="form-control" name="code" required>
 
-                               <input type="text" class="form-control" name="c_city" required>
+                       </div><!-- form-group Finish -->
 
-                           </div><!-- form-group Finish -->
+                       <div class="form-group"><!-- form-group Begin -->
 
-                           <div class="form-group"><!-- form-group Begin -->
+                         <label> Data plata: </label>
 
-                               <label>Numar telefon</label>
+                          <input type="text" class="form-control" name="date" required>
 
-                               <input type="text" class="form-control" name="c_contact" required>
+                       </div><!-- form-group Finish -->
 
-                           </div><!-- form-group Finish -->
+                       <div class="text-center"><!-- text-center Begin -->
 
-                           <div class="form-group"><!-- form-group Begin -->
+                           <button class="btn btn-primary btn-lg"><!-- tn btn-primary btn-lg Begin -->
 
-                               <label>Adresa</label>
+                               <i class="fa fa-user-md"></i> Confirmare
 
-                               <input type="text" class="form-control" name="c_address" required>
+                           </button><!-- tn btn-primary btn-lg Finish -->
 
-                           </div><!-- form-group Finish -->
+                       </div><!-- text-center Finish -->
 
-                           <div class="form-group"><!-- form-group Begin -->
-
-                               <label>Poza profil</label>
-
-                               <input type="file" class="form-control form-height-custom" name="c_image" required>
-
-                           </div><!-- form-group Finish -->
-
-                           <div class="text-center"><!-- text-center Begin -->
-
-                               <button type="submit" name="register" class="btn btn-primary">
-
-                               <i class="fa fa-user-md"></i> Inregistrare
-
-                               </button>
-
-                           </div><!-- text-center Finish -->
-
-                       </form><!-- form Finish -->
-
-                   </div><!-- box-header Finish -->
+                   </form><!-- form Finish -->
 
                </div><!-- box Finish -->
 

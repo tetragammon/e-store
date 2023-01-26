@@ -17,7 +17,7 @@
            <div class="col-md-6 offer"><!-- col-md-6 offer Begin -->
 
                <a href="#" class="btn btn-success btn-sm">Welcome</a>
-               <a href="checkout.php">4 Produse in Cos | Pret total: 300 RON </a>
+               <a href="checkout.php">4 Produse in Cos | Pret total: 300 RON  </a>
 
            </div><!-- col-md-6 offer Finish -->
 
@@ -26,16 +26,16 @@
                <ul class="menu"><!-- cmenu Begin -->
 
                    <li>
-                       <a href="customer_register.php">Inregistrare</a>
+                       <a href="../customer_register.php">Inregistrare</a>
                    </li>
                    <li>
-                       <a href="checkout.php">Contul meu</a>
+                       <a href="my_account.php">Contul meu</a>
                    </li>
                    <li>
-                       <a href="cart.php">Cos cumparaturi</a>
+                       <a href="../cart.php">Cos cumparaturi</a>
                    </li>
                    <li>
-                       <a href="checkout.php">Login</a>
+                       <a href="../checkout.php">Login</a>
                    </li>
 
                </ul><!-- menu Finish -->
@@ -83,20 +83,20 @@
 
                    <ul class="nav navbar-nav left"><!-- nav navbar-nav left Begin -->
 
-                       <li  class="active">
-                           <a href="index.php">Acasa</a>
+                       <li>
+                           <a href="../index.php">Acasa</a>
                        </li>
                        <li>
-                           <a href="shop.php">Magazin</a>
+                           <a href="../shop.php">Magazin</a>
+                       </li>
+                       <li class="active">
+                           <a href="my_account.php">Contul meu</a>
                        </li>
                        <li>
-                           <a href="/customer/my_account.php">Contul meu</a>
+                           <a href="../cart.php">Cos Cumparaturi</a>
                        </li>
                        <li>
-                           <a href="cart.php">Cos Cumparaturi</a>
-                       </li>
-                       <li>
-                           <a href="contact.php">Contact</a>
+                           <a href="../contact.php">Contact</a>
                        </li>
 
                    </ul><!-- nav navbar-nav left Finish -->
@@ -115,7 +115,7 @@
 
                    <button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse" data-target="#search"><!-- btn btn-primary navbar-btn Begin -->
 
-                       <span class="sr-only">Comutare Cautare</span>
+                       <span class="sr-only">Comutare cautare</span>
 
                        <i class="fa fa-search"></i>
 
@@ -159,10 +159,10 @@
 
                <ul class="breadcrumb"><!-- breadcrumb Begin -->
                    <li>
-                       <a href="index.php">Acasa</a>
+                       <a href="../index.php">Acasa</a>
                    </li>
                    <li>
-                       Inregistrare
+                       Contul meu
                    </li>
                </ul><!-- breadcrumb Finish -->
 
@@ -182,93 +182,13 @@
 
                <div class="box"><!-- box Begin -->
 
-                   <div class="box-header"><!-- box-header Begin -->
+                   <?php
 
-                       <center><!-- center Begin -->
+                   if (isset($_GET['my_orders'])){
+                       include("my_orders.php");
+                   }
 
-                           <h2> Inregistrare cont nou</h2>
-
-                       </center><!-- center Finish -->
-
-                       <form action="customer_register.php" method="post" enctype="multipart/form-data"><!-- form Begin -->
-
-                           <div class="form-group"><!-- form-group Begin -->
-
-                               <label>Numele tau</label>
-
-                               <input type="text" class="form-control" name="c_name" required>
-
-                           </div><!-- form-group Finish -->
-
-                           <div class="form-group"><!-- form-group Begin -->
-
-                               <label>Email</label>
-
-                               <input type="text" class="form-control" name="c_email" required>
-
-                           </div><!-- form-group Finish -->
-
-                           <div class="form-group"><!-- form-group Begin -->
-
-                               <label>Parola ta</label>
-
-                               <input type="password" class="form-control" name="c_pass" required>
-
-                           </div><!-- form-group Finish -->
-
-                           <div class="form-group"><!-- form-group Begin -->
-
-                               <label>Tara</label>
-
-                               <input type="text" class="form-control" name="c_country" required>
-
-                           </div><!-- form-group Finish -->
-
-                           <div class="form-group"><!-- form-group Begin -->
-
-                               <label>Oras</label>
-
-                               <input type="text" class="form-control" name="c_city" required>
-
-                           </div><!-- form-group Finish -->
-
-                           <div class="form-group"><!-- form-group Begin -->
-
-                               <label>Numar telefon</label>
-
-                               <input type="text" class="form-control" name="c_contact" required>
-
-                           </div><!-- form-group Finish -->
-
-                           <div class="form-group"><!-- form-group Begin -->
-
-                               <label>Adresa</label>
-
-                               <input type="text" class="form-control" name="c_address" required>
-
-                           </div><!-- form-group Finish -->
-
-                           <div class="form-group"><!-- form-group Begin -->
-
-                               <label>Poza profil</label>
-
-                               <input type="file" class="form-control form-height-custom" name="c_image" required>
-
-                           </div><!-- form-group Finish -->
-
-                           <div class="text-center"><!-- text-center Begin -->
-
-                               <button type="submit" name="register" class="btn btn-primary">
-
-                               <i class="fa fa-user-md"></i> Inregistrare
-
-                               </button>
-
-                           </div><!-- text-center Finish -->
-
-                       </form><!-- form Finish -->
-
-                   </div><!-- box-header Finish -->
+                   ?>
 
                </div><!-- box Finish -->
 
