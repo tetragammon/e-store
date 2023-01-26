@@ -16,7 +16,7 @@
 			<div class="col-md-6 offer"><!--col-md-6 offer begin-->
 
 				<a href="#" class="btn btn-success btn-sm">Welcome</a>
-				<a href="checkout.php">4 Produse in Cos | Pret total: 300 RON</a>
+				<a href="checkout.php">4 Produse in Cos | Pret total: 300 RON </a>
 
 			</div><!--col-md-6 offer end-->
 
