@@ -28,11 +28,37 @@
 
 				<h4>Top Categorii Produse</h4>
 				<ul>
-					<li><a href="#">Proteine</a></li>
-					<li><a href="#">Creatina</a></li>
-					<li><a href="#">Aminoacizi</a></li>
-					<li><a href="#">Vitamine si minerale</a></li>
-					<li><a href="#">Pre-workout</a></li>
+
+					<?php
+
+                        $get_p_cats = "select * from product_categories";
+
+                        $run_p_cats = mysqli_query($con,$get_p_cats);
+
+                        while($row_p_cats=mysqli_fetch_array($run_p_cats)){
+
+                            $p_cat_id = $row_p_cats['p_cat_id'];
+
+                            $p_cat_title = $row_p_cats['p_cat_title'];
+
+                            echo "
+
+                                <li>
+
+                                    <a href='shop.php?p_cat=$p_cat_id'>
+
+                                        $p_cat_title
+
+                                    </a>
+
+                                </li>
+
+                            ";
+
+                        }
+
+                    ?>
+
 				</ul>
 
 				<hr class="hidden-md hidden-lg">
@@ -66,11 +92,14 @@
 				<p class="text-muted">Nu pierdeti ultimele noastre update-uri!
 				</p>
 
-				<form action="" method="post"><!-- form begin -->
+				<form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=M-devMedia', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" method="post"><!-- form begin -->
 
 					<div class="input-group"><!-- input-group begin -->
 
 						<input type="text" class="form-control" name="email">
+
+						<input type="hidden" value="E-Store" name="uri"/><input type="hidden" name="loc" value="en_US"/>
+
 						<span class="input-group-btn">
 
 							<input type="submit" value="Subscribe "class="btn btn-default">
