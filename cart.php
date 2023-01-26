@@ -1,6 +1,6 @@
-<?php
+  <?php
 
-
+    $active='Cos';
     include("includes/header.php");
 
 ?>

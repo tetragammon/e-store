@@ -1,6 +1,6 @@
 <?php
 
-    $active='Cos cumparaturi';
+    $active=='Magazin';
     include("includes/header.php");
 
 ?>

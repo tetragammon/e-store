@@ -97,10 +97,10 @@ include("includes/db.php");
                        <li class="<?php if($active=='Magazin') echo"active"; ?>">
                            <a href="../shop.php">Magazin</a>
                        </li>
-                       <li class="<?php if($active=='Contul meu') echo"active"; ?>">
+                       <li class="<?php if($active=='Cont') echo"active"; ?>">
                            <a href="customer/my_account.php">Contul meu</a>
                        </li>
-                       <li class="<?php if($active=='Cos Cumparaturi') echo"active"; ?>">
+                       <li class="<?php if($active=='Cos') echo"active"; ?>">
                            <a href="../cart.php">Cos Cumparaturi</a>
                        </li>
                        <li class="<?php if($active=='Contact') echo"active"; ?>">

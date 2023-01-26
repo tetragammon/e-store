@@ -1,7 +1,7 @@
 
   <?php
 
-    $active='Contul meu';
+    $active='Cont';
     include("includes/header.php");
 
 ?>
