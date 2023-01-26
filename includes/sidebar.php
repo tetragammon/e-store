@@ -6,11 +6,11 @@
 	<div class="panel-body"><!-- panel-body begin -->
 		<ul class="nav nav-pills nav-stacked category-menu">
 
-			<li><a href="#">Proteine</a></li>
-			<li><a href="#">Creatina</a></li>
-			<li><a href="#">Aminoacizi</a></li>
-			<li><a href="#">Vitamine si minerale</a></li>
-			<li><a href="#">Pre-workout</a></li>
+			<?php
+
+			getPCats();
+
+			?>
 
 		</ul>
 	</div><!-- panel-body end -->
@@ -25,10 +25,11 @@
 	<div class="panel-body"><!-- panel-body begin -->
 		<ul class="nav nav-pills nav-stacked category-menu">
 
-			<li><a href="#">Barbati</a></li>
-			<li><a href="#">Femei</a></li>
-			<li><a href="#">Vegetarian</a></li>
-			<li><a href="#">Vegan</a></li>
+			<?php
+
+			getCats();
+
+			?>
 		</ul>
 	</div><!-- panel-body end -->
 

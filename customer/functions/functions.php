@@ -18,6 +18,8 @@ function getRealIpUser(){
 
 }
 
+/// finish getRealIpUser functions ///
+
 /// begin add_cart functions ///
 
 function add_cart(){
@@ -40,7 +42,7 @@ function add_cart(){
 
         if(mysqli_num_rows($run_check)>0){
 
-            echo "<script>alert('Acest produs a fost adaugat deja!')</script>";
+            echo "<script>alert('This product has already added in cart')</script>";
             echo "<script>window.open('details.php?pro_id=$p_id','_self')</script>";
 
         }else{
@@ -58,8 +60,6 @@ function add_cart(){
 }
 
 /// finish add_cart functions ///
-
-/// finish getRealIpUser functions ///
 
 /// begin getPro functions ///
 
@@ -107,7 +107,7 @@ function getPro(){
 
                     <p class='price'>
 
-                         $pro_price lei
+                        $ $pro_price
 
                     </p>
 
@@ -121,7 +121,7 @@ function getPro(){
 
                         <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
 
-                            <i class='fa fa-shopping-cart'></i> Adaugare in cos
+                            <i class='fa fa-shopping-cart'></i> Add to Cart
 
                         </a>
 
@@ -237,7 +237,7 @@ function getpcatpro(){
 
                 <div class='box'>
 
-                    <h1> Nu a fost gasit nici un produs din aceasta categorie! </h1>
+                    <h1> No Product Found In This Product Categories </h1>
 
                 </div>
 
@@ -295,7 +295,7 @@ function getpcatpro(){
 
                     <p class='price'>
 
-                         $pro_price lei
+                        $ $pro_price
 
                     </p>
 
@@ -309,7 +309,7 @@ function getpcatpro(){
 
                         <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
 
-                            <i class='fa fa-shopping-cart'></i> Adaugare in cos
+                            <i class='fa fa-shopping-cart'></i> Add to Cart
 
                         </a>
 
@@ -351,7 +351,7 @@ function getcatpro(){
 
         $cat_desc = $row_cat['cat_desc'];
 
-        $get_cat = "select * from products where cat_id='$cat_id'";
+        $get_cat = "select * from products where cat_id='$cat_id' LIMIT 0,6";
 
         $run_products = mysqli_query($db,$get_cat);
 
@@ -364,7 +364,7 @@ function getcatpro(){
 
                 <div class='box'>
 
-                    <h1> Nici un produs gasit in aceasta categorie! </h1>
+                    <h1> No Product Found In This Category </h1>
 
                 </div>
 
@@ -420,7 +420,7 @@ function getcatpro(){
 
                         <p class='price'>
 
-                            $pro_price lei
+                            $$pro_price
 
                         </p>
 
@@ -434,7 +434,7 @@ function getcatpro(){
 
                                 <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
 
-                                <i class='fa fa-shopping-cart'></i> Adaugare in cos
+                                <i class='fa fa-shopping-cart'></i> Add To Cart
 
                                 </a>
 
@@ -456,6 +456,8 @@ function getcatpro(){
 
 /// finish getcatpro functions ///
 
+/// finish getRealIpUser functions ///
+
 function items(){
 
     global $db;
@@ -471,6 +473,8 @@ function items(){
     echo $count_items;
 
 }
+
+/// finish getRealIpUser functions ///
 
 /// begin total_price functions ///
 
@@ -506,7 +510,7 @@ function total_price(){
 
     }
 
-    echo "" . $total;
+    echo "$" . $total;
 
 }
 

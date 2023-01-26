@@ -1,7 +1,7 @@
 <?php
 
 include("includes/db.php");
-
+include("functions/functions.php");
 
 ?>
 
@@ -25,7 +25,7 @@ include("includes/db.php");
            <div class="col-md-6 offer"><!-- col-md-6 offer Begin -->
 
                <a href="#" class="btn btn-success btn-sm">Welcome</a>
-               <a href="checkout.php">4 Produse in Cos | Pret total: 300 RON </a>
+               <a href="checkout.php"><?php items(); ?> Produse in Cos | Pret total: <?php total_price(); ?> RON </a>
 
            </div><!-- col-md-6 offer Finish -->
 
@@ -98,7 +98,7 @@ include("includes/db.php");
                            <a href="../shop.php">Magazin</a>
                        </li>
                        <li class="<?php if($active=='Cont') echo"active"; ?>">
-                           <a href="customer/my_account.php">Contul meu</a>
+                           <a href="my_account.php">Contul meu</a>
                        </li>
                        <li class="<?php if($active=='Cos') echo"active"; ?>">
                            <a href="../cart.php">Cos Cumparaturi</a>
