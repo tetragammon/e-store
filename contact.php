@@ -93,6 +93,43 @@
 
                        </form><!-- form Finish -->
 
+                       <?php
+
+                       if(isset($_POST['submit'])){
+
+
+                           $sender_name = $_POST['name'];
+
+                           $sender_email = $_POST['email'];
+
+                           $sender_subject = $_POST['subject'];
+
+                           $sender_message = $_POST['message'];
+
+                           $receiver_email = "mugianto4th@gmail.com";
+
+                           mail($receiver_email,$sender_name,$sender_subject,$sender_message,$sender_email);
+
+                           /// Auto reply ///
+
+                           $email = $_POST['email'];
+
+                           $subject = "Bine ati venit";
+
+                           $msg = "Va multumim pentru mesaj, va vom raspunde cat mai repede posibil";
+
+                           $from = "comenzi@e-store.ro";
+
+                           mail($email,$subject,$msg,$from);
+
+                           echo "<h2 align='center'> Mesajul a fost trimis cu succes.</h2>";
+
+                       }
+
+                       ?>
+
+
+
                    </div><!-- box-header Finish -->
 
                </div><!-- box Finish -->
