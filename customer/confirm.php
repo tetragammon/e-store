@@ -53,7 +53,7 @@ if(isset($_GET['order_id'])){
                    ?>
 
                </a>
-               <a href="checkout.php"> <?php items(); ?> Items In Your Cart | Total Price: <?php total_price(); ?> </a>
+               <a href="checkout.php"> <?php items(); ?> Produse in Cos | Total: <?php total_price(); ?> </a>
 
            </div><!-- col-md-6 offer Finish -->
 
@@ -62,13 +62,13 @@ if(isset($_GET['order_id'])){
                <ul class="menu"><!-- cmenu Begin -->
 
                    <li>
-                       <a href="../customer_register.php">Register</a>
+                       <a href="../customer_register.php">Inregistrare</a>
                    </li>
                    <li>
-                       <a href="my_account.php">My Account</a>
+                       <a href="my_account.php">Contul meu</a>
                    </li>
                    <li>
-                       <a href="../cart.php">Go To Cart</a>
+                       <a href="../cart.php">Cos cumparaturi</a>
                    </li>
                    <li>
                        <a href="../checkout.php">
@@ -136,19 +136,19 @@ if(isset($_GET['order_id'])){
                    <ul class="nav navbar-nav left"><!-- nav navbar-nav left Begin -->
 
                        <li>
-                           <a href="../index.php">Home</a>
+                           <a href="../index.php">Acasa</a>
                        </li>
                        <li>
-                           <a href="../shop.php">Shop</a>
+                           <a href="../shop.php">Magazin</a>
                        </li>
                        <li class="active">
-                           <a href="my_account.php">My Account</a>
+                           <a href="my_account.php">Contul meu</a>
                        </li>
                        <li>
-                           <a href="../cart.php">Shopping Cart</a>
+                           <a href="../cart.php">Cos cumparaturi</a>
                        </li>
                        <li>
-                           <a href="../contact.php">Contact Us</a>
+                           <a href="../contact.php">Contact</a>
                        </li>
 
                    </ul><!-- nav navbar-nav left Finish -->
@@ -159,7 +159,7 @@ if(isset($_GET['order_id'])){
 
                    <i class="fa fa-shopping-cart"></i>
 
-                   <span><?php items(); ?> Items In Your Cart</span>
+                   <span><?php items(); ?> Produse in Cos</span>
 
                </a><!-- btn navbar-btn btn-primary Finish -->
 
@@ -211,10 +211,10 @@ if(isset($_GET['order_id'])){
 
                <ul class="breadcrumb"><!-- breadcrumb Begin -->
                    <li>
-                       <a href="index.php">Home</a>
+                       <a href="index.php">Acasa</a>
                    </li>
                    <li>
-                       My Account
+                       Contul meu
                    </li>
                </ul><!-- breadcrumb Finish -->
 
@@ -234,13 +234,13 @@ if(isset($_GET['order_id'])){
 
                <div class="box"><!-- box Begin -->
 
-                   <h1 align="center"> Please confirm your payment</h1>
+                   <h1 align="center"> Confirmati plata</h1>
 
                    <form action="confirm.php?update_id=<?php echo $order_id;  ?>" method="post" enctype="multipart/form-data"><!-- form Begin -->
 
                        <div class="form-group"><!-- form-group Begin -->
 
-                         <label> Invoice No: </label>
+                         <label> Factura nr: </label>
 
                           <input type="text" class="form-control" name="invoice_no" required>
 
@@ -248,7 +248,7 @@ if(isset($_GET['order_id'])){
 
                        <div class="form-group"><!-- form-group Begin -->
 
-                         <label> Amount Sent: </label>
+                         <label> Suma trimisa: </label>
 
                           <input type="text" class="form-control" name="amount_sent" required>
 
@@ -256,12 +256,12 @@ if(isset($_GET['order_id'])){
 
                        <div class="form-group"><!-- form-group Begin -->
 
-                         <label> Select Payment Mode: </label>
+                         <label> Modalitate plata: </label>
 
                           <select name="payment_mode" class="form-control"><!-- form-control Begin -->
 
-                              <option> Select Payment Mode </option>
-                              <option> Back Code </option>
+                              <option> Selectati plata </option>
+                              <option> Cod bancar </option>
                               <option> Paypall </option>
                               <option> Payoneer </option>
                               <option> Western Union </option>
@@ -272,7 +272,7 @@ if(isset($_GET['order_id'])){
 
                        <div class="form-group"><!-- form-group Begin -->
 
-                         <label> Transaction / Reference ID: </label>
+                         <label> Transactie / ID: </label>
 
                           <input type="text" class="form-control" name="ref_no" required>
 
@@ -288,7 +288,7 @@ if(isset($_GET['order_id'])){
 
                        <div class="form-group"><!-- form-group Begin -->
 
-                         <label> Payment Date: </label>
+                         <label> Data plata: </label>
 
                           <input type="text" class="form-control" name="date" required>
 
@@ -298,7 +298,7 @@ if(isset($_GET['order_id'])){
 
                            <button class="btn btn-primary btn-lg" name="confirm_payment"><!-- tn btn-primary btn-lg Begin -->
 
-                               <i class="fa fa-user-md"></i> Confirm Payment
+                               <i class="fa fa-user-md"></i> Confirmare
 
                            </button><!-- tn btn-primary btn-lg Finish -->
 
@@ -340,7 +340,7 @@ if(isset($_GET['order_id'])){
 
                         if($run_pending_order){
 
-                            echo "<script>alert('Thank You for purchasing, your orders will be completed within 24 hours work')</script>";
+                            echo "<script>alert('Va multumim pentru plata!')</script>";
 
                             echo "<script>window.open('my_account.php?my_orders','_self')</script>";
 

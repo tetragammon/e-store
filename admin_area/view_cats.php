@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li>
 
-                <i class="fa fa-dashboard"></i> Dashboard / View Categories
+                <i class="fa fa-dashboard"></i> Dashboard / Categorii
 
             </li>
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                 <h3 class="panel-title"><!-- panel-title begin -->
 
-                    <i class="fa fa-tags fa-fw"></i> View Categories
+                    <i class="fa fa-tags fa-fw"></i> Categorii
 
                 </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -37,11 +37,11 @@
 
                         <thead><!-- thead begin -->
                             <tr><!-- tr begin -->
-                                <th> Category ID </th>
-                                <th> Category Title </th>
-                                <th> Category Desc </th>
-                                <th> Edit Category </th>
-                                <th> Delete Category </th>
+                                <th> ID </th>
+                                <th> Categorie </th>
+                                <th> Descriere </th>
+                                <th> Editare</th>
+                                <th> Stergere </th>
                             </tr><!-- tr finish -->
                         </thead><!-- thead finish -->
 

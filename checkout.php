@@ -11,10 +11,10 @@
 
                <ul class="breadcrumb"><!-- breadcrumb Begin -->
                    <li>
-                       <a href="index.php">Home</a>
+                       <a href="index.php">Acasa</a>
                    </li>
                    <li>
-                       Register
+                       Inregistrare
                    </li>
                </ul><!-- breadcrumb Finish -->
 

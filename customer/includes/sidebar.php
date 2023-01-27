@@ -52,7 +52,7 @@
 
                 <a href="my_account.php?my_orders">
 
-                    <i class="fa fa-list"></i> My Orders
+                    <i class="fa fa-list"></i> Comenzile mele
 
                 </a>
 
@@ -62,7 +62,7 @@
 
                 <a href="my_account.php?pay_offline">
 
-                    <i class="fa fa-bolt"></i> Pay Offline
+                    <i class="fa fa-bolt"></i> Plata Offline
 
                 </a>
 
@@ -72,7 +72,7 @@
 
                 <a href="my_account.php?edit_account">
 
-                    <i class="fa fa-pencil"></i> Edit Account
+                    <i class="fa fa-pencil"></i> Editare cont
 
                 </a>
 
@@ -82,7 +82,7 @@
 
                 <a href="my_account.php?change_pass">
 
-                    <i class="fa fa-user"></i> Change Password
+                    <i class="fa fa-user"></i> Schimbare parola
 
                 </a>
 
@@ -92,7 +92,7 @@
 
                 <a href="my_account.php?delete_account">
 
-                    <i class="fa fa-trash-o"></i> Delete Account
+                    <i class="fa fa-trash-o"></i> Stergere cont
 
                 </a>
 

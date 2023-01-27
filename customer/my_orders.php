@@ -1,12 +1,12 @@
 <center><!--  center Begin  -->
 
-    <h1> My Orders </h1>
+    <h1> Comenzile mele </h1>
 
-    <p class="lead"> Your orders on one place</p>
+    <p class="lead"> Comenzile mele intr-un singur loc</p>
 
     <p class="text-muted">
 
-        If you have any questions, feel free to <a href="../contact.php">Contact Us</a>. Our Customer Service work <strong>24/7</strong>
+        Daca aveti intrebari <a href="../contact.php">Contact</a>.Customer Service work <strong>24/7</strong>
 
     </p>
 
@@ -25,12 +25,12 @@
             <tr><!--  tr Begin  -->
 
                 <th> ON: </th>
-                <th> Due Amount: </th>
-                <th> Invoice No: </th>
-                <th> Qty: </th>
-                <th> Size: </th>
-                <th> Order Date:</th>
-                <th> Paid / Unpaid: </th>
+                <th> Suma: </th>
+                <th> Factura: </th>
+                <th> Cantitate: </th>
+                <th> Aroma: </th>
+                <th> Data:</th>
+                <th> Platit / Neplatit: </th>
                 <th> Status: </th>
 
             </tr><!--  tr Finish  -->
@@ -77,11 +77,11 @@
 
                 if($order_status=='pending'){
 
-                    $order_status = 'Unpaid';
+                    $order_status = 'Neplatita';
 
                 }else{
 
-                    $order_status = 'Paid';
+                    $order_status = 'Platita';
 
                 }
 

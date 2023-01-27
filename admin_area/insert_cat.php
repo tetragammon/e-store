@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li>
 
-                <i class="fa fa-dashboard"></i> Dashboard / Insert Category
+                <i class="fa fa-dashboard"></i> Dashboard / Adaugare categorie
 
             </li>
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                 <h3 class="panel-title"><!-- panel-title begin -->
 
-                    <i class="fa fa-money fa-fw"></i> Insert Category
+                    <i class="fa fa-money fa-fw"></i> Adaugare categorie
 
                 </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -37,7 +37,7 @@
 
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin -->
 
-                            Category Title
+                            Nume categorie
 
                         </label><!-- control-label col-md-3 finish -->
 
@@ -52,7 +52,7 @@
 
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin -->
 
-                            Category Description
+                            Descriere categorie
 
                         </label><!-- control-label col-md-3 finish -->
 
@@ -99,7 +99,7 @@
 
               if($run_cat){
 
-                  echo "<script>alert('Your New Category Has Been Inserted')</script>";
+                  echo "<script>alert('Categoria a fost inregistrata')</script>";
 
                   echo "<script>window.open('index.php?view_cats','_self')</script>";
 

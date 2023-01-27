@@ -20,7 +20,7 @@
 
         if($run_delete){
 
-            echo "<script>alert('One of Your Payment Has Been Deleted')</script>";
+            echo "<script>alert('Plata a fost stearsa')</script>";
 
             echo "<script>window.open('index.php?view_payments','_self')</script>";
 

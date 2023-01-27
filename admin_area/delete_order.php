@@ -20,7 +20,7 @@
 
         if($run_delete){
 
-            echo "<script>alert('One of your costumer order has been Deleted')</script>";
+            echo "<script>alert('Comanda a fost stearsa')</script>";
 
             echo "<script>window.open('index.php?view_orders','_self')</script>";
 

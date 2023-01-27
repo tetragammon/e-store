@@ -21,9 +21,9 @@
        <form action="" class="form-login" method="post"><!-- form-login begin -->
            <h2 class="form-login-heading"> Admin Login </h2>
 
-           <input type="text" class="form-control" placeholder="Email Address" name="admin_email" required>
+           <input type="text" class="form-control" placeholder="Adresa email" name="admin_email" required>
 
-           <input type="password" class="form-control" placeholder="Your Password" name="admin_pass" required>
+           <input type="password" class="form-control" placeholder="Parola" name="admin_pass" required>
 
            <button type="submit" class="btn btn-lg btn-primary btn-block" name="admin_login"><!-- btn btn-lg btn-primary btn-block begin -->
 
@@ -56,13 +56,13 @@
 
             $_SESSION['admin_email']=$admin_email;
 
-            echo "<script>alert('Logged in. Welcome Back')</script>";
+            echo "<script>alert('Logat , bine ai revenit')</script>";
 
             echo "<script>window.open('index.php?dashboard','_self')</script>";
 
         }else{
 
-            echo "<script>alert('Email or Password is Wrong !')</script>";
+            echo "<script>alert('Email sau parola gresite !')</script>";
 
         }
 

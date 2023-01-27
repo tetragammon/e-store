@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li>
 
-                <i class="fa fa-dashboard"></i> Dashboard / Insert Slide
+                <i class="fa fa-dashboard"></i> Dashboard / Adaugare slide
 
             </li>
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                 <h3 class="panel-title"><!-- panel-title begin -->
 
-                    <i class="fa fa-money fa-fw"></i> Insert Slide
+                    <i class="fa fa-money fa-fw"></i> Adaugare slide
 
                 </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -37,7 +37,7 @@
 
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin -->
 
-                            Slide Name
+                            Nume slide
 
                         </label><!-- control-label col-md-3 finish -->
 
@@ -52,7 +52,7 @@
 
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin -->
 
-                            Slide Url
+                            Url slide
 
                         </label><!-- control-label col-md-3 finish -->
 
@@ -67,7 +67,7 @@
 
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin -->
 
-                            Slide Image
+                            Imagine slide
 
                         </label><!-- control-label col-md-3 finish -->
 
@@ -122,7 +122,7 @@
 
             $run_slide = mysqli_query($con,$insert_slide);
 
-            echo "<script>alert('Your new slide image has been inserted')</script>";
+            echo "<script>alert('Noul slide a fost introdus')</script>";
 
             echo "<script>window.open('index.php?view_slides','_self')</script>";
 

@@ -11,10 +11,10 @@
 
                <ul class="breadcrumb"><!-- breadcrumb Begin -->
                    <li>
-                       <a href="index.php">Home</a>
+                       <a href="index.php">Acasa</a>
                    </li>
                    <li>
-                       Contact Us
+                       Contact
                    </li>
                </ul><!-- breadcrumb Finish -->
 
@@ -38,11 +38,11 @@
 
                        <center><!-- center Begin -->
 
-                           <h2> Feel free to Contact Us</h2>
+                           <h2> Contactati-ne!</h2>
 
                            <p class="text-muted"><!-- text-muted Begin -->
 
-                               If you have any questions, feel free to contact us. Our Customer Service work <strong>24/7</strong>
+                               Nu ezitati sa ne contactati. Customer Service <strong>24/7</strong>
 
                            </p><!-- text-muted Finish -->
 
@@ -52,7 +52,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Name</label>
+                               <label>Nume</label>
 
                                <input type="text" class="form-control" name="name" required>
 
@@ -68,7 +68,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Subject</label>
+                               <label>Subiect</label>
 
                                <input type="text" class="form-control" name="subject" required>
 
@@ -76,7 +76,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Message</label>
+                               <label>Mesaj</label>
 
                                <textarea name="message" class="form-control"></textarea>
 
@@ -86,7 +86,7 @@
 
                                <button type="submit" name="submit" class="btn btn-primary">
 
-                               <i class="fa fa-user-md"></i> Send Message
+                               <i class="fa fa-user-md"></i> Trimitere mesaj
 
                                </button>
 
@@ -98,7 +98,7 @@
 
                        if(isset($_POST['submit'])){
 
-                           /// Admin receives message with this ///
+
 
                            $sender_name = $_POST['name'];
 
@@ -108,23 +108,23 @@
 
                            $sender_message = $_POST['message'];
 
-                           $receiver_email = "mugianto4th@gmail.com";
+                           $receiver_email = "comenzi@e-store.com";
 
                            mail($receiver_email,$sender_name,$sender_subject,$sender_message,$sender_email);
 
-                           /// Auto reply to sender with this ///
+
 
                            $email = $_POST['email'];
 
-                           $subject = "Welcome to my website";
+                           $subject = "Bine ati venit";
 
-                           $msg = "Thanks for sending us message. ASAP we will reply your message";
+                           $msg = "Va vom raspunde cat mai repede la mesaj!";
 
-                           $from = "mugianto4th@gmail.com";
+                           $from = "comenzi@e-store.com";
 
                            mail($email,$subject,$msg,$from);
 
-                           echo "<h2 align='center'> Your message has sent sucessfully </h2>";
+                           echo "<h2 align='center'> Mesajul a fost trimis cu succes </h2>";
 
                        }
 

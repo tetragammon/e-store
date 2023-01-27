@@ -50,7 +50,7 @@
 
             <li class="active"><!-- active Begin -->
 
-                <i class="fa fa-dashboard"></i> Dashboard / Edit User
+                <i class="fa fa-dashboard"></i> Dashboard / Editare user
 
             </li><!-- active Finish -->
 

@@ -42,7 +42,7 @@ function add_cart(){
 
         if(mysqli_num_rows($run_check)>0){
 
-            echo "<script>alert('This product has already added in cart')</script>";
+            echo "<script>alert('Produsul a fost deja adaugat in cos')</script>";
             echo "<script>window.open('details.php?pro_id=$p_id','_self')</script>";
 
         }else{
@@ -107,7 +107,7 @@ function getPro(){
 
                     <p class='price'>
 
-                        $ $pro_price
+                         $pro_price lei
 
                     </p>
 
@@ -115,13 +115,13 @@ function getPro(){
 
                         <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
 
-                            View Details
+                            Detalii
 
                         </a>
 
                         <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
 
-                            <i class='fa fa-shopping-cart'></i> Add to Cart
+                            <i class='fa fa-shopping-cart'></i> Adaugare
 
                         </a>
 
@@ -237,7 +237,7 @@ function getpcatpro(){
 
                 <div class='box'>
 
-                    <h1> No Product Found In This Product Categories </h1>
+                    <h1> Nici un produs din aceasta categorie </h1>
 
                 </div>
 
@@ -303,13 +303,13 @@ function getpcatpro(){
 
                         <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
 
-                            View Details
+                            Detalii
 
                         </a>
 
                         <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
 
-                            <i class='fa fa-shopping-cart'></i> Add to Cart
+                            <i class='fa fa-shopping-cart'></i> Adaugare
 
                         </a>
 
@@ -364,7 +364,7 @@ function getcatpro(){
 
                 <div class='box'>
 
-                    <h1> No Product Found In This Category </h1>
+                    <h1> Nici un produs in aceasta categorie </h1>
 
                 </div>
 
@@ -420,7 +420,7 @@ function getcatpro(){
 
                         <p class='price'>
 
-                            $$pro_price
+                            $pro_price lei
 
                         </p>
 
@@ -510,7 +510,7 @@ function total_price(){
 
     }
 
-    echo "$" . $total;
+    echo  $total." lei";
 
 }
 

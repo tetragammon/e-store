@@ -193,11 +193,11 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Product Image 1 </label>
+                      <label class="col-md-3 control-label"> Imagine produs 1</label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
-                          <input name="product_img1" type="file" class="form-control" required>
+                          <input name="product_img1" type="file" class="form-control">
 
                           <br>
 
@@ -209,7 +209,7 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Product Image 2 </label>
+                      <label class="col-md-3 control-label"> Imagine produs 2 </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -225,7 +225,7 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Product Image 3 </label>
+                      <label class="col-md-3 control-label"> Imagine produs 2 </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -241,7 +241,7 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Product Price </label>
+                      <label class="col-md-3 control-label"> Pret produs </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -253,7 +253,7 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Product Keywords </label>
+                      <label class="col-md-3 control-label"> Keywords </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -265,7 +265,7 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Product Desc </label>
+                      <label class="col-md-3 control-label"> Descriere produs </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 

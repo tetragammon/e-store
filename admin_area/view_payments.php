@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li class="active"><!-- active begin -->
 
-                <i class="fa fa-dashboard"></i> Dashboard / View Payments
+                <i class="fa fa-dashboard"></i> Dashboard / Plati
 
             </li><!-- active finish -->
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                <h3 class="panel-title"><!-- panel-title begin -->
 
-                   <i class="fa fa-tags"></i>  View Payments
+                   <i class="fa fa-tags"></i>  Plati
 
                </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -37,14 +37,14 @@
 
                         <thead><!-- thead begin -->
                             <tr><!-- tr begin -->
-                                <th> No: </th>
-                                <th> Invoice No: </th>
-                                <th> Amount Paid: </th>
-                                <th> Method: </th>
-                                <th> Reference No: </th>
-                                <th> Payment Code: </th>
-                                <th> Payment Date: </th>
-                                <th> Delete Payment: </th>
+                                <th> Nr: </th>
+                                <th> Factura: </th>
+                                <th> Suma platita: </th>
+                                <th> Metoda: </th>
+                                <th> RNr ref: </th>
+                                <th> Cod plata: </th>
+                                <th> Data: </th>
+                                <th> Stergere: </th>
                             </tr><!-- tr finish -->
                         </thead><!-- thead finish -->
 
@@ -90,7 +90,7 @@
 
                                      <a href="index.php?delete_payment=<?php echo $payment_id; ?>">
 
-                                        <i class="fa fa-trash-o"></i> Delete
+                                        <i class="fa fa-trash-o"></i> Stergere
 
                                      </a>
 

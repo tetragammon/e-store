@@ -39,7 +39,7 @@
                     <div class="col-xs-9 text-right"><!-- col-xs-9 text-right begin -->
                         <div class="huge"> <?php echo $count_products; ?> </div>
 
-                        <div> Products </div>
+                        <div> Produse </div>
 
                     </div><!-- col-xs-9 text-right finish -->
 
@@ -50,7 +50,7 @@
                 <div class="panel-footer"><!-- panel-footer begin -->
 
                     <span class="pull-left"><!-- pull-left begin -->
-                        View Details
+                        Detalii
                     </span><!-- pull-left finish -->
 
                     <span class="pull-right"><!-- pull-right begin -->
@@ -79,7 +79,7 @@
                     <div class="col-xs-9 text-right"><!-- col-xs-9 text-right begin -->
                         <div class="huge"> <?php echo $count_customers; ?> </div>
 
-                        <div> Customers </div>
+                        <div> Clienti </div>
 
                     </div><!-- col-xs-9 text-right finish -->
 
@@ -90,7 +90,7 @@
                 <div class="panel-footer"><!-- panel-footer begin -->
 
                     <span class="pull-left"><!-- pull-left begin -->
-                        View Details
+                        Detalii
                     </span><!-- pull-left finish -->
 
                     <span class="pull-right"><!-- pull-right begin -->
@@ -119,7 +119,7 @@
                     <div class="col-xs-9 text-right"><!-- col-xs-9 text-right begin -->
                         <div class="huge"> <?php echo $count_p_categories; ?> </div>
 
-                        <div> Product Categories </div>
+                        <div> Categorii produse </div>
 
                     </div><!-- col-xs-9 text-right finish -->
 
@@ -130,7 +130,7 @@
                 <div class="panel-footer"><!-- panel-footer begin -->
 
                     <span class="pull-left"><!-- pull-left begin -->
-                        View Details
+                        Detalii
                     </span><!-- pull-left finish -->
 
                     <span class="pull-right"><!-- pull-right begin -->
@@ -159,7 +159,7 @@
                     <div class="col-xs-9 text-right"><!-- col-xs-9 text-right begin -->
                         <div class="huge"> <?php echo $count_pending_orders; ?> </div>
 
-                        <div> Orders </div>
+                        <div> Comenzi </div>
 
                     </div><!-- col-xs-9 text-right finish -->
 
@@ -170,7 +170,7 @@
                 <div class="panel-footer"><!-- panel-footer begin -->
 
                     <span class="pull-left"><!-- pull-left begin -->
-                        View Details
+                        Detalii
                     </span><!-- pull-left finish -->
 
                     <span class="pull-right"><!-- pull-right begin -->
@@ -193,7 +193,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                 <h3 class="panel-title"><!-- panel-title begin -->
 
-                    <i class="fa fa-money fa-fw"></i> New Orders
+                    <i class="fa fa-money fa-fw"></i> Comenzi noi
 
                 </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -206,12 +206,12 @@
 
                             <tr><!-- th begin -->
 
-                                <th> Order no: </th>
-                                <th> Customer Email: </th>
-                                <th> Invoice No: </th>
-                                <th> Product ID: </th>
-                                <th> Product Qty: </th>
-                                <th> Product Size: </th>
+                                <th> Nr comenda: </th>
+                                <th> Email client: </th>
+                                <th> Nr factura: </th>
+                                <th> ID produs: </th>
+                                <th> Cantitate: </th>
+                                <th> Aroma: </th>
                                 <th> Status: </th>
 
                             </tr><!-- th finish -->
@@ -303,7 +303,7 @@
 
                     <a href="index.php?view_orders"><!-- a href begin -->
 
-                        View All Orders <i class="fa fa-arrow-circle-right"></i>
+                        Toate valorile <i class="fa fa-arrow-circle-right"></i>
 
                     </a><!-- a href finish -->
 
@@ -333,13 +333,13 @@
                 <div class="mb-md"><!-- mb-md begin -->
                     <div class="widget-content-expanded"><!-- widget-content-expanded begin -->
                         <i class="fa fa-user"></i> <span> Email: </span> <?php echo $admin_email; ?> <br/>
-                        <i class="fa fa-flag"></i> <span> Country: </span> <?php echo $admin_country; ?> <br/>
+                        <i class="fa fa-flag"></i> <span> Tara: </span> <?php echo $admin_country; ?> <br/>
                         <i class="fa fa-envelope"></i> <span> Contact: </span> <?php echo $admin_contact; ?> <br/>
                     </div><!-- widget-content-expanded finish -->
 
                     <hr class="dotted short">
 
-                    <h5 class="text-muted"> About Me </h5>
+                    <h5 class="text-muted"> Despre mine </h5>
 
                     <p><!-- p begin -->
 

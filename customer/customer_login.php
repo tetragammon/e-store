@@ -6,7 +6,7 @@
 
           <h1> Login </h1>
 
-          <p class="lead"> Already have our account..? </p>
+          <p class="lead"> Ai deja un cont? </p>
 
           <p class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, maxime. Laudantium omnis, ullam, fuga officia provident error corporis consectetur aliquid corrupti recusandae minus ipsam quasi. Perspiciatis nemo, nostrum magni odit! </p>
 
@@ -26,7 +26,7 @@
 
        <div class="form-group"><!-- form-group Begin -->
 
-          <label> Password </label>
+          <label> Parola </label>
 
           <input name="c_pass" type="password" class="form-control" required>
 
@@ -48,7 +48,7 @@
 
      <a href="customer_register.php">
 
-         <h3> Dont have account..? Register here </h3>
+         <h3> Nu ai un cont? Inregistreaza-te aici </h3>
 
      </a>
 
@@ -81,7 +81,7 @@ if(isset($_POST['login'])){
 
     if($check_customer==0){
 
-        echo "<script>alert('Your email or password is wrong')</script>";
+        echo "<script>alert('Email sau parola gresite!')</script>";
 
         exit();
 
@@ -91,7 +91,7 @@ if(isset($_POST['login'])){
 
         $_SESSION['customer_email']=$customer_email;
 
-       echo "<script>alert('You are Logged in')</script>";
+       echo "<script>alert('Esti logat!')</script>";
 
        echo "<script>window.open('customer/my_account.php?my_orders','_self')</script>";
 
@@ -99,7 +99,7 @@ if(isset($_POST['login'])){
 
         $_SESSION['customer_email']=$customer_email;
 
-       echo "<script>alert('You are Logged in')</script>";
+       echo "<script>alert('Esti logat!')</script>";
 
        echo "<script>window.open('checkout.php','_self')</script>";
 

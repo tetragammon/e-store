@@ -50,7 +50,7 @@ if(isset($_GET['pro_id'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>M-Dev Store</title>
+    <title>E-store - Magazinul tau de suplimente</title>
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
     <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -80,7 +80,7 @@ if(isset($_GET['pro_id'])){
                    ?>
 
                </a>
-               <a href="checkout.php"><?php items(); ?> Items In Your Cart | Total Price: <?php total_price(); ?> </a>
+               <a href="checkout.php"><?php items(); ?> Produse in cos | Pret total: <?php total_price(); ?> </a>
 
            </div><!-- col-md-6 offer Finish -->
 
@@ -89,13 +89,13 @@ if(isset($_GET['pro_id'])){
                <ul class="menu"><!-- cmenu Begin -->
 
                    <li>
-                       <a href="customer_register.php">Register</a>
+                       <a href="customer_register.php">Inregistrare</a>
                    </li>
                    <li>
-                       <a href="checkout.php">My Account</a>
+                       <a href="checkout.php">Contul meu</a>
                    </li>
                    <li>
-                       <a href="cart.php">Go To Cart</a>
+                       <a href="cart.php">Cos cumparaturi</a>
                    </li>
                    <li>
                        <a href="checkout.php">
@@ -163,10 +163,10 @@ if(isset($_GET['pro_id'])){
                    <ul class="nav navbar-nav left"><!-- nav navbar-nav left Begin -->
 
                        <li class="<?php if($active=='Home') echo"active"; ?>">
-                           <a href="index.php">Home</a>
+                           <a href="index.php">Acasa</a>
                        </li>
                        <li class="<?php if($active=='Shop') echo"active"; ?>">
-                           <a href="shop.php">Shop</a>
+                           <a href="shop.php">Magazin</a>
                        </li>
                        <li class="<?php if($active=='Account') echo"active"; ?>">
 
@@ -174,11 +174,11 @@ if(isset($_GET['pro_id'])){
 
                            if(!isset($_SESSION['customer_email'])){
 
-                               echo"<a href='checkout.php'>My Account</a>";
+                               echo"<a href='checkout.php'>Contul meu</a>";
 
                            }else{
 
-                              echo"<a href='customer/my_account.php?my_orders'>My Account</a>";
+                              echo"<a href='customer/my_account.php?my_orders'>Contul meu</a>";
 
                            }
 
@@ -186,10 +186,10 @@ if(isset($_GET['pro_id'])){
 
                        </li>
                        <li class="<?php if($active=='Cart') echo"active"; ?>">
-                           <a href="cart.php">Shopping Cart</a>
+                           <a href="cart.php">Cos cumparaturi</a>
                        </li>
                        <li class="<?php if($active=='Contact') echo"active"; ?>">
-                           <a href="contact.php">Contact Us</a>
+                           <a href="contact.php">Contact</a>
                        </li>
 
                    </ul><!-- nav navbar-nav left Finish -->
@@ -200,7 +200,7 @@ if(isset($_GET['pro_id'])){
 
                    <i class="fa fa-shopping-cart"></i>
 
-                   <span><?php items(); ?> Items In Your Cart</span>
+                   <span><?php items(); ?> Produse in Cos</span>
 
                </a><!-- btn navbar-btn btn-primary Finish -->
 

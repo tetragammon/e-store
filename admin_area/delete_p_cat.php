@@ -20,7 +20,7 @@
 
         if($run_delete){
 
-            echo "<script>alert('One of Your Product Has Been Deleted')</script>";
+            echo "<script>alert('Unul din produse a fost sters')</script>";
 
             echo "<script>window.open('index.php?view_p_cats','_self')</script>";
 

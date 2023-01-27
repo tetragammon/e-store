@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li>
 
-                <i class="fa fa-dashboard"></i> Dashboard / Insert Product Category
+                <i class="fa fa-dashboard"></i> Dashboard / Adaugare categorie produs
 
             </li>
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                 <h3 class="panel-title"><!-- panel-title begin -->
 
-                    <i class="fa fa-money fa-fw"></i> Insert Product Category
+                    <i class="fa fa-money fa-fw"></i> Adaugare categorie produs
 
                 </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -37,7 +37,7 @@
 
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin -->
 
-                            Product Category Title
+                            Categorie produs
 
                         </label><!-- control-label col-md-3 finish -->
 
@@ -52,7 +52,7 @@
 
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin -->
 
-                            Product Category Description
+                            Descriere categorie produs
 
                         </label><!-- control-label col-md-3 finish -->
 
@@ -99,7 +99,7 @@
 
               if($run_p_cat){
 
-                  echo "<script>alert('Your New Product Category Has Been Inserted')</script>";
+                  echo "<script>alert('Categoria a fost introdusa')</script>";
 
                   echo "<script>window.open('index.php?view_p_cats','_self')</script>";
 

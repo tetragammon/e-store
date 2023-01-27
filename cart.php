@@ -11,10 +11,10 @@
 
                <ul class="breadcrumb"><!-- breadcrumb Begin -->
                    <li>
-                       <a href="index.php">Home</a>
+                       <a href="index.php">Acasa</a>
                    </li>
                    <li>
-                       Cart
+                       Cos cumparaturi
                    </li>
                </ul><!-- breadcrumb Finish -->
 
@@ -26,7 +26,7 @@
 
                    <form action="cart.php" method="post" enctype="multipart/form-data"><!-- form Begin -->
 
-                       <h1>Shopping Cart</h1>
+                       <h1>Cos cumparaturi</h1>
 
                        <?php
 
@@ -40,7 +40,7 @@
 
                        ?>
 
-                       <p class="text-muted">You currently have <?php echo $count; ?> item(s) in your cart</p>
+                       <p class="text-muted">Aveti <?php echo $count; ?> produs(e) in cos</p>
 
                        <div class="table-responsive"><!-- table-responsive Begin -->
 
@@ -50,11 +50,11 @@
 
                                    <tr><!-- tr Begin -->
 
-                                       <th colspan="2">Product</th>
-                                       <th>Quantity</th>
-                                       <th>Unit Price</th>
-                                       <th>Size</th>
-                                       <th colspan="1">Delete</th>
+                                       <th colspan="2">Produse</th>
+                                       <th>Cantitate</th>
+                                       <th>Pret unitar</th>
+                                       <th>Aroma</th>
+                                       <th colspan="1">Stergere</th>
                                        <th colspan="2">Sub-Total</th>
 
                                    </tr><!-- tr Finish -->
@@ -97,7 +97,7 @@
 
                                        <td>
 
-                                           <img class="img-responsive" src="admin_area/product_images/<?php echo $product_img1; ?>" alt="Product 3a">
+                                           <img class="img-responsive" src="admin_area/product_images/<?php echo $product_img1; ?>" alt="Produs 3a">
 
                                        </td>
 
@@ -148,7 +148,7 @@
                                    <tr><!-- tr Begin -->
 
                                        <th colspan="5">Total</th>
-                                       <th colspan="2">$<?php echo $total; ?></th>
+                                       <th colspan="2"><?php echo $total; ?> lei</th>
 
                                    </tr><!-- tr Finish -->
 
@@ -164,7 +164,7 @@
 
                                <a href="index.php" class="btn btn-default"><!-- btn btn-default Begin -->
 
-                                   <i class="fa fa-chevron-left"></i> Continue Shopping
+                                   <i class="fa fa-chevron-left"></i> Continuati cumparaturile
 
                                </a><!-- btn btn-default Finish -->
 
@@ -174,13 +174,13 @@
 
                                <button type="submit" name="update" value="Update Cart" class="btn btn-default"><!-- btn btn-default Begin -->
 
-                                   <i class="fa fa-refresh"></i> Update Cart
+                                   <i class="fa fa-refresh"></i> Update Cos
 
                                </button><!-- btn btn-default Finish -->
 
                                <a href="checkout.php" class="btn btn-primary">
 
-                                   Proceed Checkout <i class="fa fa-chevron-right"></i>
+                                   Checkout <i class="fa fa-chevron-right"></i>
 
                                </a>
 
@@ -225,7 +225,7 @@
                <div id="row same-heigh-row"><!-- #row same-heigh-row Begin -->
                    <div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Begin -->
                        <div class="box same-height headline"><!-- box same-height headline Begin -->
-                           <h3 class="text-center">Products You Maybe Like</h3>
+                           <h3 class="text-center">Produse care ti-ar placea</h3>
                        </div><!-- box same-height headline Finish -->
                    </div><!-- col-md-3 col-sm-6 Finish -->
 
@@ -279,13 +279,13 @@
 
                    <div class="box-header"><!-- box-header Begin -->
 
-                       <h3>Order Summary</h3>
+                       <h3>Sumar comanda</h3>
 
                    </div><!-- box-header Finish -->
 
                    <p class="text-muted"><!-- text-muted Begin -->
 
-                       Shipping and additional costs are calculated based on value you have entered
+                       Costurile de livrare sunt calculate in functie de destinatie
 
                    </p><!-- text-muted Finish -->
 
@@ -297,29 +297,29 @@
 
                                <tr><!-- tr Begin -->
 
-                                   <td> Order All Sub-Total </td>
-                                   <th> $<?php echo $total; ?> </th>
+                                   <td> Sub-Total </td>
+                                   <th> <?php echo $total; ?> lei </th>
 
                                </tr><!-- tr Finish -->
 
                                <tr><!-- tr Begin -->
 
-                                   <td> Shipping and Handling </td>
-                                   <td> $0 </td>
+                                   <td> Livrare </td>
+                                   <td> 0 lei </td>
 
                                </tr><!-- tr Finish -->
 
                                <tr><!-- tr Begin -->
 
-                                   <td> Tax </td>
-                                   <th> $0 </th>
+                                   <td> Taxe </td>
+                                   <th> 0 lei </th>
 
                                </tr><!-- tr Finish -->
 
                                <tr class="total"><!-- tr Begin -->
 
                                    <td> Total </td>
-                                   <th> $<?php echo $total; ?> </th>
+                                   <th> <?php echo $total; ?> lei </th>
 
                                </tr><!-- tr Finish -->
 

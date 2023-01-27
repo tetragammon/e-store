@@ -5,7 +5,7 @@
 
     <div class="form-group"><!-- form-group Begin -->
 
-        <label> Your Old Password: </label>
+        <label> Parola veche: </label>
 
         <input type="text" name="old_pass" class="form-control" required>
 
@@ -13,7 +13,7 @@
 
     <div class="form-group"><!-- form-group Begin -->
 
-        <label> Your New Password: </label>
+        <label> Parola noua: </label>
 
         <input type="text" name="new_pass" class="form-control" required>
 
@@ -21,7 +21,7 @@
 
     <div class="form-group"><!-- form-group Begin -->
 
-        <label> Confirm Your New Password: </label>
+        <label> Confirmare parola noua: </label>
 
         <input type="text" name="new_pass_again" class="form-control" required>
 
@@ -31,7 +31,7 @@
 
         <button type="submit" name="submit" class="btn btn-primary"><!-- btn btn-primary Begin -->
 
-            <i class="fa fa-user-md"></i> Update Now
+            <i class="fa fa-user-md"></i> Update
 
         </button><!-- btn btn-primary inish -->
 
@@ -60,7 +60,7 @@ if(isset($_POST['submit'])){
 
     if($check_c_old_pass==0){
 
-        echo "<script>alert('Sorry, your current password did not valid. Please try again')</script>";
+        echo "<script>alert('Parola veche este incorecta!')</script>";
 
         exit();
 
@@ -68,7 +68,7 @@ if(isset($_POST['submit'])){
 
     if($c_new_pass!=$c_new_pass_again){
 
-        echo "<script>alert('Sorry, your new password did not match')</script>";
+        echo "<script>alert('Parola noua nu este confirmata')</script>";
 
         exit();
 
@@ -80,7 +80,7 @@ if(isset($_POST['submit'])){
 
     if($run_c_pass){
 
-        echo "<script>alert('Your password has been updated')</script>";
+        echo "<script>alert('Parola a fost updatata')</script>";
 
         echo "<script>window.open('my_account.php?my_orders','_self')</script>";
 

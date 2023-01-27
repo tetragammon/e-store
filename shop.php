@@ -11,10 +11,10 @@
 
                <ul class="breadcrumb"><!-- breadcrumb Begin -->
                    <li>
-                       <a href="index.php">Home</a>
+                       <a href="index.php">Acasa</a>
                    </li>
                    <li>
-                       Shop
+                       Magazin
                    </li>
                </ul><!-- breadcrumb Finish -->
 
@@ -41,7 +41,7 @@
                       echo "
 
                        <div class='box'><!-- box Begin -->
-                           <h1>Shop</h1>
+                           <h1>Magazin</h1>
                            <p>
                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo deleniti accusamus, consequuntur illum quasi ut. Voluptate a, ipsam repellendus ut fugiat minima? Id facilis itaque autem, officiis veritatis perferendis, quaerat!
                            </p>
@@ -113,7 +113,7 @@
 
                                                 <p class='price'>
 
-                                                    $$pro_price
+                                                    $pro_price lei
 
                                                 </p>
 
@@ -163,7 +163,7 @@
 
                             <li>
 
-                                <a href='shop.php?page=1'> ".'First Page'." </a>
+                                <a href='shop.php?page=1'> ".'Prima pagina'." </a>
 
                             </li>
 
@@ -187,7 +187,7 @@
 
                             <li>
 
-                                <a href='shop.php?page=$total_pages'> ".'Last Page'." </a>
+                                <a href='shop.php?page=$total_pages'> ".'Ultima pagina'." </a>
 
                             </li>
 

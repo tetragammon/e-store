@@ -50,7 +50,7 @@ if(isset($_GET['pro_id'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>M-Dev Store</title>
+    <title>E-Store - Magazinul tau de suplimente</title>
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
     <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -89,13 +89,13 @@ if(isset($_GET['pro_id'])){
                <ul class="menu"><!-- cmenu Begin -->
 
                    <li>
-                       <a href="../customer_register.php">Register</a>
+                       <a href="../customer_register.php">Inregistrare</a>
                    </li>
                    <li>
-                       <a href="my_account.php">My Account</a>
+                       <a href="my_account.php">Contul meu</a>
                    </li>
                    <li>
-                       <a href="../cart.php">Go To Cart</a>
+                       <a href="../cart.php">Cos cumparaturi</a>
                    </li>
                    <li>
                        <a href="../checkout.php">
@@ -163,19 +163,19 @@ if(isset($_GET['pro_id'])){
                    <ul class="nav navbar-nav left"><!-- nav navbar-nav left Begin -->
 
                        <li>
-                           <a href="../index.php">Home</a>
+                           <a href="../index.php">Acasa</a>
                        </li>
                        <li>
-                           <a href="../shop.php">Shop</a>
+                           <a href="../shop.php">Magazin</a>
                        </li>
                        <li class="active">
-                           <a href="my_account.php">My Account</a>
+                           <a href="my_account.php">Contul meu</a>
                        </li>
                        <li>
-                           <a href="../cart.php">Shopping Cart</a>
+                           <a href="../cart.php">Cos cumparaturi</a>
                        </li>
                        <li>
-                           <a href="../contact.php">Contact Us</a>
+                           <a href="../contact.php">Contact</a>
                        </li>
 
                    </ul><!-- nav navbar-nav left Finish -->
@@ -186,7 +186,7 @@ if(isset($_GET['pro_id'])){
 
                    <i class="fa fa-shopping-cart"></i>
 
-                   <span><?php items(); ?> Items In Your Cart</span>
+                   <span><?php items(); ?> Produse in cos</span>
 
                </a><!-- btn navbar-btn btn-primary Finish -->
 

@@ -11,10 +11,10 @@
 
                <ul class="breadcrumb"><!-- breadcrumb Begin -->
                    <li>
-                       <a href="index.php">Home</a>
+                       <a href="index.php">Acasa</a>
                    </li>
                    <li>
-                       Register
+                       Inregistrare
                    </li>
                </ul><!-- breadcrumb Finish -->
 
@@ -38,7 +38,7 @@
 
                        <center><!-- center Begin -->
 
-                           <h2> Register a new account </h2>
+                           <h2> Inregistrare cont nou </h2>
 
                        </center><!-- center Finish -->
 
@@ -46,7 +46,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Your Name</label>
+                               <label>Nume</label>
 
                                <input type="text" class="form-control" name="c_name" required>
 
@@ -54,7 +54,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Your Email</label>
+                               <label>Email</label>
 
                                <input type="text" class="form-control" name="c_email" required>
 
@@ -62,7 +62,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Your Password</label>
+                               <label>Parola</label>
 
                                <input type="password" class="form-control" name="c_pass" required>
 
@@ -70,7 +70,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Your Country</label>
+                               <label>Tara</label>
 
                                <input type="text" class="form-control" name="c_country" required>
 
@@ -78,7 +78,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Your City</label>
+                               <label>Oras</label>
 
                                <input type="text" class="form-control" name="c_city" required>
 
@@ -86,7 +86,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Your Contact</label>
+                               <label>Nr tel</label>
 
                                <input type="text" class="form-control" name="c_contact" required>
 
@@ -94,7 +94,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Your Address</label>
+                               <label>Adresa</label>
 
                                <input type="text" class="form-control" name="c_address" required>
 
@@ -102,7 +102,7 @@
 
                            <div class="form-group"><!-- form-group Begin -->
 
-                               <label>Your Profile Picture</label>
+                               <label>Poza profil</label>
 
                                <input type="file" class="form-control form-height-custom" name="c_image" required>
 
@@ -112,7 +112,7 @@
 
                                <button type="submit" name="register" class="btn btn-primary">
 
-                               <i class="fa fa-user-md"></i> Register
+                               <i class="fa fa-user-md"></i> Inregistrare
 
                                </button>
 

@@ -16,7 +16,7 @@
 
             <li class="active"><!-- active Begin -->
 
-                <i class="fa fa-dashboard"></i> Dashboard / Insert User
+                <i class="fa fa-dashboard"></i> Dashboard / Adaugare user
 
             </li><!-- active Finish -->
 
@@ -36,7 +36,7 @@
 
                <h3 class="panel-title"><!-- panel-title Begin -->
 
-                   <i class="fa fa-money fa-fw"></i> Insert User
+                   <i class="fa fa-money fa-fw"></i> Adaugare user
 
                </h3><!-- panel-title Finish -->
 
@@ -72,7 +72,7 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Password </label>
+                      <label class="col-md-3 control-label"> Parola </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -84,7 +84,7 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Country </label>
+                      <label class="col-md-3 control-label"> Tara </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -108,7 +108,7 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Job </label>
+                      <label class="col-md-3 control-label"> Ocupatie </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -120,7 +120,7 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Image </label>
+                      <label class="col-md-3 control-label"> Imagine </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -132,7 +132,7 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> About </label>
+                      <label class="col-md-3 control-label"> Detalii </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -188,7 +188,7 @@ if(isset($_POST['submit'])){
 
     if($run_user){
 
-        echo "<script>alert('New User has been inserted to your admin sucessfully')</script>";
+        echo "<script>alert('Noul user admin a fost introdus')</script>";
         echo "<script>window.open('index.php?view_users','_self')</script>";
 
     }

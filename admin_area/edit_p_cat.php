@@ -35,7 +35,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li>
 
-                <i class="fa fa-dashboard"></i> Dashboard / Edit Product Category
+                <i class="fa fa-dashboard"></i> Dashboard / Editare categorie produs
 
             </li>
         </ol><!-- breadcrumb finish -->
@@ -48,7 +48,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                 <h3 class="panel-title"><!-- panel-title begin -->
 
-                    <i class="fa fa-pencil fa-fw"></i> Edit Product Category
+                    <i class="fa fa-pencil fa-fw"></i> Editare categorie produs
 
                 </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -59,7 +59,7 @@
 
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin -->
 
-                            Product Category Title
+                            Categorie produs
 
                         </label><!-- control-label col-md-3 finish -->
 
@@ -74,7 +74,7 @@
 
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin -->
 
-                            Product Category Description
+                            Decriere categorie produs
 
                         </label><!-- control-label col-md-3 finish -->
 

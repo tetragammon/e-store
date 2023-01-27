@@ -21,7 +21,7 @@
 
         </button><!-- navbar-toggle finish -->
 
-        <a href="index.php?dashboard" class="navbar-brand">Admin Area</a>
+        <a href="index.php?dashboard" class="navbar-brand">Zona Admin</a>
 
     </div><!-- navbar-header finish -->
 
@@ -39,7 +39,7 @@
                 <li><!-- li begin -->
                     <a href="index.php?user_profile=<?php echo $admin_id; ?>"><!-- a href begin -->
 
-                        <i class="fa fa-fw fa-user"></i> Profile
+                        <i class="fa fa-fw fa-user"></i> Profil
 
                     </a><!-- a href finish -->
                 </li><!-- li finish -->
@@ -47,7 +47,7 @@
                 <li><!-- li begin -->
                     <a href="index.php?view_products"><!-- a href begin -->
 
-                        <i class="fa fa-fw fa-envelope"></i> Products
+                        <i class="fa fa-fw fa-envelope"></i> Produse
 
                         <span class="badge"><?php echo $count_products; ?></span>
 
@@ -57,7 +57,7 @@
                 <li><!-- li begin -->
                     <a href="index.php?view_customers"><!-- a href begin -->
 
-                        <i class="fa fa-fw fa-users"></i> Customeres
+                        <i class="fa fa-fw fa-users"></i> Clienti
 
                         <span class="badge"><?php echo $count_customers; ?></span>
 
@@ -67,7 +67,7 @@
                 <li><!-- li begin -->
                     <a href="index.php?view_cats"><!-- a href begin -->
 
-                        <i class="fa fa-fw fa-gear"></i> Product Categories
+                        <i class="fa fa-fw fa-gear"></i> Categorii produse
 
                         <span class="badge"><?php echo $count_p_categories; ?></span>
 
@@ -104,17 +104,17 @@
             <li><!-- li begin -->
                 <a href="#" data-toggle="collapse" data-target="#products"><!-- a href begin -->
 
-                        <i class="fa fa-fw fa-tag"></i> Products
+                        <i class="fa fa-fw fa-tag"></i> Produse
                         <i class="fa fa-fw fa-caret-down"></i>
 
                 </a><!-- a href finish -->
 
                 <ul id="products" class="collapse"><!-- collapse begin -->
                     <li><!-- li begin -->
-                        <a href="index.php?insert_product"> Insert Product </a>
+                        <a href="index.php?insert_product"> Introducere produs </a>
                     </li><!-- li finish -->
                     <li><!-- li begin -->
-                        <a href="index.php?view_products"> View Products </a>
+                        <a href="index.php?view_products"> Produse </a>
                     </li><!-- li finish -->
                 </ul><!-- collapse finish -->
 
@@ -123,17 +123,17 @@
             <li><!-- li begin -->
                 <a href="#" data-toggle="collapse" data-target="#p_cat"><!-- a href begin -->
 
-                        <i class="fa fa-fw fa-edit"></i> Products Categories
+                        <i class="fa fa-fw fa-edit"></i> Categorii produse
                         <i class="fa fa-fw fa-caret-down"></i>
 
                 </a><!-- a href finish -->
 
                 <ul id="p_cat" class="collapse"><!-- collapse begin -->
                     <li><!-- li begin -->
-                        <a href="index.php?insert_p_cat"> Insert Product Category </a>
+                        <a href="index.php?insert_p_cat"> Adaugare categorii produse </a>
                     </li><!-- li finish -->
                     <li><!-- li begin -->
-                        <a href="index.php?view_p_cats"> View Products Categories </a>
+                        <a href="index.php?view_p_cats"> Categorii produse </a>
                     </li><!-- li finish -->
                 </ul><!-- collapse finish -->
 
@@ -142,17 +142,17 @@
             <li><!-- li begin -->
                 <a href="#" data-toggle="collapse" data-target="#cat"><!-- a href begin -->
 
-                        <i class="fa fa-fw fa-book"></i> Categories
+                        <i class="fa fa-fw fa-book"></i> Categorii
                         <i class="fa fa-fw fa-caret-down"></i>
 
                 </a><!-- a href finish -->
 
                 <ul id="cat" class="collapse"><!-- collapse begin -->
                     <li><!-- li begin -->
-                        <a href="index.php?insert_cat"> Insert Category </a>
+                        <a href="index.php?insert_cat"> Adaugare Categorii </a>
                     </li><!-- li finish -->
                     <li><!-- li begin -->
-                        <a href="index.php?view_cats"> View Categories </a>
+                        <a href="index.php?view_cats">Categorii </a>
                     </li><!-- li finish -->
                 </ul><!-- collapse finish -->
 
@@ -168,29 +168,10 @@
 
                 <ul id="slides" class="collapse"><!-- collapse begin -->
                     <li><!-- li begin -->
-                        <a href="index.php?insert_slide"> Insert Slide </a>
+                        <a href="index.php?insert_slide"> Adaugare Slide </a>
                     </li><!-- li finish -->
                     <li><!-- li begin -->
-                        <a href="index.php?view_slides"> View Slides </a>
-                    </li><!-- li finish -->
-                </ul><!-- collapse finish -->
-
-            </li><!-- li finish -->
-
-            <li><!-- li begin -->
-                <a href="#" data-toggle="collapse" data-target="#boxes"><!-- a href begin -->
-
-                        <i class="fa fa-fw fa-dropbox"></i> Boxes
-                        <i class="fa fa-fw fa-caret-down"></i>
-
-                </a><!-- a href finish -->
-
-                <ul id="boxes" class="collapse"><!-- collapse begin -->
-                    <li><!-- li begin -->
-                        <a href="index.php?insert_box"> Insert Box </a>
-                    </li><!-- li finish -->
-                    <li><!-- li begin -->
-                        <a href="index.php?view_boxes"> View Boxes </a>
+                        <a href="index.php?view_slides">  Slides </a>
                     </li><!-- li finish -->
                 </ul><!-- collapse finish -->
 
@@ -198,39 +179,39 @@
 
             <li><!-- li begin -->
                 <a href="index.php?view_customers"><!-- a href begin -->
-                    <i class="fa fa-fw fa-users"></i> View Customers
+                    <i class="fa fa-fw fa-users"></i> Clienti
                 </a><!-- a href finish -->
             </li><!-- li finish -->
 
             <li><!-- li begin -->
                 <a href="index.php?view_orders"><!-- a href begin -->
-                    <i class="fa fa-fw fa-book"></i> View Orders
+                    <i class="fa fa-fw fa-book"></i> Comenzi
                 </a><!-- a href finish -->
             </li><!-- li finish -->
 
             <li><!-- li begin -->
                 <a href="index.php?view_payments"><!-- a href begin -->
-                    <i class="fa fa-fw fa-money"></i> View Payments
+                    <i class="fa fa-fw fa-money"></i> Plati
                 </a><!-- a href finish -->
             </li><!-- li finish -->
 
             <li><!-- li begin -->
                 <a href="#" data-toggle="collapse" data-target="#users"><!-- a href begin -->
 
-                        <i class="fa fa-fw fa-users"></i> Users
+                        <i class="fa fa-fw fa-users"></i> Useri
                         <i class="fa fa-fw fa-caret-down"></i>
 
                 </a><!-- a href finish -->
 
                 <ul id="users" class="collapse"><!-- collapse begin -->
                     <li><!-- li begin -->
-                        <a href="index.php?insert_user"> Insert User </a>
+                        <a href="index.php?insert_user"> Adaugare User </a>
                     </li><!-- li finish -->
                     <li><!-- li begin -->
-                        <a href="index.php?view_users"> View Users </a>
+                        <a href="index.php?view_users">Useri </a>
                     </li><!-- li finish -->
                     <li><!-- li begin -->
-                        <a href="index.php?user_profile=<?php echo $admin_id; ?>"> Edit User Profile </a>
+                        <a href="index.php?user_profile=<?php echo $admin_id; ?>"> Edit profil user </a>
                     </li><!-- li finish -->
                 </ul><!-- collapse finish -->
 

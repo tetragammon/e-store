@@ -3,18 +3,18 @@
         <div class="row"><!-- row Begin -->
             <div class="col-sm-6 col-md-3"><!-- col-sm-6 col-md-3 Begin -->
 
-               <h4>Pages</h4>
+               <h4>Pagini</h4>
 
                 <ul><!-- ul Begin -->
-                    <li><a href="cart.php">Shopping Cart</a></li>
-                    <li><a href="contact.php">Contact Us</a></li>
-                    <li><a href="shop.php">Shop</a></li>
-                    <li><a href="customer/my_account.php">My Account</a></li>
+                    <li><a href="cart.php">Cos cumparaturi</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="shop.php">Magazin</a></li>
+                    <li><a href="customer/my_account.php">Contul meu</a></li>
                 </ul><!-- ul Finish -->
 
                 <hr>
 
-                <h4>User Section</h4>
+                <h4>Sectiune user</h4>
 
                 <ul><!-- ul Begin -->
 
@@ -32,7 +32,7 @@
 
                            ?>
 
-                    <li><a href="customer_register.php">Register</a></li>
+                    <li><a href="customer_register.php">Inregistrare</a></li>
                 </ul><!-- ul Finish -->
 
                 <hr class="hidden-md hidden-lg hidden-sm">
@@ -41,7 +41,7 @@
 
             <div class="com-sm-6 col-md-3"><!-- col-sm-6 col-md-3 Begin -->
 
-                <h4>Top Products Categories</h4>
+                <h4>Top categorii produse</h4>
 
                 <ul><!-- ul Begin -->
 
@@ -83,20 +83,20 @@
 
             <div class="col-sm-6 col-md-3"><!-- col-sm-6 col-md-3 Begin -->
 
-                <h4>Find Us</h4>
+                <h4>Contact</h4>
 
                 <p><!-- p Start -->
 
-                    <strong>M-Dev Media inc.</strong>
-                    <br/>Cibubur
-                    <br/>Ciracas
-                    <br/>0818-0683-3157
-                    <br/>mugianto4th@gmail.com
-                    <br/><strong>MrGhie</strong>
+                    <strong>E-store.</strong>
+                    <br/>Sibiu
+                    <br/>Romania
+                    <br/>0743370919
+                    <br/>comenzi@e-syore.com
+                    <br/><strong>Laurentiu Cerghedean</strong>
 
                 </p><!-- p Finish -->
 
-                <a href="contact.php">Check Our Contact Page</a>
+                <a href="contact.php">Pagina contact</a>
 
                 <hr class="hidden-md hidden-lg">
 
@@ -104,10 +104,10 @@
 
             <div class="col-sm-6 col-md-3">
 
-                <h4>Get The News</h4>
+                <h4>Noutati</h4>
 
                 <p class="text-muted">
-                    Dont miss our latest update products.
+                    Nu rata noile noastre produse.
                 </p>
 
                 <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=M-devMedia', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" method="post"><!-- form begin -->
@@ -128,7 +128,7 @@
 
                 <hr>
 
-                <h4>Keep In Touch</h4>
+                <h4>Urmariti-ne</h4>
 
                 <p class="social">
                     <a href="#" class="fa fa-facebook"></a>
@@ -148,12 +148,12 @@
     <div class="container"><!-- container Begin -->
         <div class="col-md-6"><!-- col-md-6 Begin -->
 
-            <p class="pull-left">&copy; 2018 M-Dev Store All Rights Reserve</p>
+            <p class="pull-left">&copy; 2023 E-store All Rights Reserved</p>
 
         </div><!-- col-md-6 Finish -->
         <div class="col-md-6"><!-- col-md-6 Begin -->
 
-            <p class="pull-right">Theme by: <a href="#">MrGhie</a></p>
+            <p class="pull-right">Theme by: <a href="#">Laurentiu Cerghedean</a></p>
 
         </div><!-- col-md-6 Finish -->
     </div><!-- container Finish -->

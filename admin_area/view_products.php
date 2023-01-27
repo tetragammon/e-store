@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li class="active"><!-- active begin -->
 
-                <i class="fa fa-dashboard"></i> Dashboard / View Products
+                <i class="fa fa-dashboard"></i> Dashboard / Produse
 
             </li><!-- active finish -->
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                <h3 class="panel-title"><!-- panel-title begin -->
 
-                   <i class="fa fa-tags"></i>  View Products
+                   <i class="fa fa-tags"></i>  Produse
 
                </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -37,15 +37,15 @@
 
                         <thead><!-- thead begin -->
                             <tr><!-- tr begin -->
-                                <th> Product ID: </th>
-                                <th> Product Title: </th>
-                                <th> Product Image: </th>
-                                <th> Product Price: </th>
-                                <th> Product Sold: </th>
-                                <th> Product Keywords: </th>
-                                <th> Product Date: </th>
-                                <th> Product Delete: </th>
-                                <th> Product Edit: </th>
+                                <th> ID: </th>
+                                <th> Produse: </th>
+                                <th> Imagine: </th>
+                                <th> Pret: </th>
+                                <th> Vandute: </th>
+                                <th> Keywords: </th>
+                                <th> Data: </th>
+                                <th> Stergere: </th>
+                                <th> Editare: </th>
                             </tr><!-- tr finish -->
                         </thead><!-- thead finish -->
 
@@ -81,7 +81,7 @@
                                 <td> <?php echo $i; ?> </td>
                                 <td> <?php echo $pro_title; ?> </td>
                                 <td> <img src="product_images/<?php echo $pro_img1; ?>" width="60" height="60"></td>
-                                <td> $ <?php echo $pro_price; ?> </td>
+                                <td>  <?php echo $pro_price; ?> lei </td>
                                 <td> <?php
 
                                         $get_sold = "select * from pending_orders where product_id='$pro_id'";
@@ -100,7 +100,7 @@
 
                                      <a href="index.php?delete_product=<?php echo $pro_id; ?>">
 
-                                        <i class="fa fa-trash-o"></i> Delete
+                                        <i class="fa fa-trash-o"></i> Stergere
 
                                      </a>
 
@@ -109,7 +109,7 @@
 
                                      <a href="index.php?edit_product=<?php echo $pro_id; ?>">
 
-                                        <i class="fa fa-pencil"></i> Edit
+                                        <i class="fa fa-pencil"></i> Editare
 
                                      </a>
 

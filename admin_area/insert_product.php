@@ -25,7 +25,7 @@
 
             <li class="active"><!-- active Begin -->
 
-                <i class="fa fa-dashboard"></i> Dashboard / Insert Products
+                <i class="fa fa-dashboard"></i> Dashboard / Adaugare produs
 
             </li><!-- active Finish -->
 
@@ -45,7 +45,7 @@
 
                <h3 class="panel-title"><!-- panel-title Begin -->
 
-                   <i class="fa fa-money fa-fw"></i> Insert Product
+                   <i class="fa fa-money fa-fw"></i> Adaugare produs
 
                </h3><!-- panel-title Finish -->
 
@@ -57,7 +57,7 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Product Title </label>
+                      <label class="col-md-3 control-label"> Produs </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -69,13 +69,13 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Product Category </label>
+                      <label class="col-md-3 control-label"> Categorie produs </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
                           <select name="product_cat" class="form-control"><!-- form-control Begin -->
 
-                              <option> Select a Category Product </option>
+                              <option> Alegeti o categorie </option>
 
                               <?php
 
@@ -105,13 +105,13 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Category </label>
+                      <label class="col-md-3 control-label"> Categorie </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
                           <select name="cat" class="form-control"><!-- form-control Begin -->
 
-                              <option> Select a Category </option>
+                              <option> Alegeti o categorie </option>
 
                               <?php
 
@@ -141,7 +141,7 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Product Image 1 </label>
+                      <label class="col-md-3 control-label"> Imagine 1 </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -153,7 +153,7 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Product Image 2 </label>
+                      <label class="col-md-3 control-label"> Imagine 2 </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -165,7 +165,7 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Product Image 3 </label>
+                      <label class="col-md-3 control-label"> Imagine 3 </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -177,7 +177,7 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Product Price </label>
+                      <label class="col-md-3 control-label"> Pret </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -189,7 +189,7 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Product Keywords </label>
+                      <label class="col-md-3 control-label"> Keywords </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -201,7 +201,7 @@
 
                    <div class="form-group"><!-- form-group Begin -->
 
-                      <label class="col-md-3 control-label"> Product Desc </label>
+                      <label class="col-md-3 control-label"> Descriere </label>
 
                       <div class="col-md-6"><!-- col-md-6 Begin -->
 
@@ -268,7 +268,7 @@ if(isset($_POST['submit'])){
 
     if($run_product){
 
-        echo "<script>alert('Product has been inserted sucessfully')</script>";
+        echo "<script>alert('Produsul a fost adaugat cu succes')</script>";
         echo "<script>window.open('index.php?view_products','_self')</script>";
 
     }

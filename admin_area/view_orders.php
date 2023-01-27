@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li class="active"><!-- active begin -->
 
-                <i class="fa fa-dashboard"></i> Dashboard / View Orders
+                <i class="fa fa-dashboard"></i> Dashboard / Comenzi
 
             </li><!-- active finish -->
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                <h3 class="panel-title"><!-- panel-title begin -->
 
-                   <i class="fa fa-tags"></i>  View Orders
+                   <i class="fa fa-tags"></i>  Comenzi
 
                </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -37,16 +37,16 @@
 
                         <thead><!-- thead begin -->
                             <tr><!-- tr begin -->
-                                <th> No: </th>
-                                <th> Customer Email: </th>
-                                <th> Invoice No: </th>
-                                <th> Product Name: </th>
-                                <th> Product Qty: </th>
-                                <th> Product Size: </th>
-                                <th> Order Date: </th>
-                                <th> Total Amount: </th>
+                                <th> Nr: </th>
+                                <th> Email: </th>
+                                <th> nr factura: </th>
+                                <th> Produs: </th>
+                                <th> Cantitate: </th>
+                                <th> Aroma: </th>
+                                <th> Data: </th>
+                                <th> Total: </th>
                                 <th> Status: </th>
-                                <th> Delete: </th>
+                                <th> Stergere: </th>
                             </tr><!-- tr finish -->
                         </thead><!-- thead finish -->
 
@@ -121,11 +121,11 @@
 
                                         if($order_status=='pending'){
 
-                                            echo $order_status='pending';
+                                            echo $order_status='in curs';
 
                                         }else{
 
-                                            echo $order_status='Complete';
+                                            echo $order_status='platita';
 
                                         }
 
@@ -136,7 +136,7 @@
 
                                      <a href="index.php?delete_order=<?php echo $order_id; ?>">
 
-                                        <i class="fa fa-trash-o"></i> Delete
+                                        <i class="fa fa-trash-o"></i> Stergere
 
                                      </a>
 

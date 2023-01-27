@@ -48,7 +48,7 @@ include("functions/functions.php");
                    ?>
 
                </a>
-               <a href="checkout.php"> <?php items(); ?> Items In Your Cart | Total Price: <?php total_price(); ?> </a>
+               <a href="checkout.php"> <?php items(); ?> Produse in Cos | Pret total: <?php total_price(); ?> </a>
 
            </div><!-- col-md-6 offer Finish -->
 
@@ -57,13 +57,13 @@ include("functions/functions.php");
                <ul class="menu"><!-- cmenu Begin -->
 
                    <li>
-                       <a href="../customer_register.php">Register</a>
+                       <a href="../customer_register.php">Inregistrare</a>
                    </li>
                    <li>
-                       <a href="my_account.php">My Account</a>
+                       <a href="my_account.php">Contul meu</a>
                    </li>
                    <li>
-                       <a href="../cart.php">Go To Cart</a>
+                       <a href="../cart.php">Cos cumparaturi</a>
                    </li>
                    <li>
                        <a href="../checkout.php">
@@ -131,19 +131,19 @@ include("functions/functions.php");
                    <ul class="nav navbar-nav left"><!-- nav navbar-nav left Begin -->
 
                        <li>
-                           <a href="../index.php">Home</a>
+                           <a href="../index.php">Acasa</a>
                        </li>
                        <li>
-                           <a href="../shop.php">Shop</a>
+                           <a href="../shop.php">Magazin</a>
                        </li>
                        <li class="active">
-                           <a href="my_account.php">My Account</a>
+                           <a href="my_account.php">Contul meu</a>
                        </li>
                        <li>
-                           <a href="../cart.php">Shopping Cart</a>
+                           <a href="../cart.php">Cos cumparaturi</a>
                        </li>
                        <li>
-                           <a href="../contact.php">Contact Us</a>
+                           <a href="../contact.php">Contact</a>
                        </li>
 
                    </ul><!-- nav navbar-nav left Finish -->
@@ -154,7 +154,7 @@ include("functions/functions.php");
 
                    <i class="fa fa-shopping-cart"></i>
 
-                   <span><?php items(); ?> Items In Your Cart</span>
+                   <span><?php items(); ?> Produse in Cos</span>
 
                </a><!-- btn navbar-btn btn-primary Finish -->
 
@@ -206,10 +206,10 @@ include("functions/functions.php");
 
                <ul class="breadcrumb"><!-- breadcrumb Begin -->
                    <li>
-                       <a href="index.php">Home</a>
+                       <a href="index.php">Acasa</a>
                    </li>
                    <li>
-                       My Account
+                       Contul meu
                    </li>
                </ul><!-- breadcrumb Finish -->
 
